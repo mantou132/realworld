@@ -64,7 +64,7 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-16, Lighthouse median of 5 runs
 
 |  | Client navigation home → article (ms) | Source lines | Official e2e passed |
 | --- | ---: | ---: | ---: |
-| gemkit | 83 | 958 | 88 / 91 |
+| gemkit | 83 | 954 | 88 / 91 |
 | sveltekit | 91 | 1143 | 6 / 93 |
 | nuxt | 101 | 711 | 87 / 91 |
 | next | 90 | 2712 | 62 / 91 |
@@ -89,7 +89,7 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-16, Lighthouse median of 5 runs
   - `should require login to post comment`：页面上导航栏和评论区各有一个 `a[href="/login"]`，触发 Playwright 严格模式。
   - `should display popular tags`：后端 `/api/tags` 只返回最热门的一部分标签，新建的标签不在里面。
   - 图片 XSS 用例：头像 URL 是 `https://example.com/...`，在测试机上一次请求要 5 s 以上，页面 `load` 超时。
-  - `should view article from home feed`：偶发。客户端导航时 URL 先变、新页面后渲染，断言恰好落在中间就会失败。单独重复 5 次都通过。
+  - `should view article from home feed`：偶发。测试假设 URL 变化时新页面已经渲染，而 gemkit 和 Nuxt 是 URL 先变、新页面后渲染（见下面的“设计差异”），断言恰好落在中间就会失败。单独重复 5 次都通过。
 - **SvelteKit / Next**：两个社区实现写于这套 e2e 约定之前，路由（`/profile/@user`、`?tag=`、`?feed=following`）、默认头像等和约定不一致，所以通过率低，不代表功能缺失。
 
 ## 为跑测试对社区实现做的改动
@@ -106,12 +106,11 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-16, Lighthouse median of 5 runs
 - 只改 query 的客户端导航不会重新执行 `load`（分页、`?feed=following`）
 - 页面级 `load` 中 `redirect()` 时 SSR 返回 500
 - Light DOM 元素模板返回 `undefined` 时，SSR 不输出 `innerHTML`
+- 子元素先于父元素水合：通过属性（`.articles=${...}`）从父元素传下来的数据，在子元素第一次渲染（水合）时还不存在，触发 `hydration template mismatch` 并整段重渲染 → 父模板设置了属性的子元素推迟到父模板水合后再挂载。文章列表、首页视图因此可以做成独立元素（`<app-article-list>`、`<app-home>`），之前只能写成模板函数
 
-还没有修复，应用里做了规避：
+设计差异（不算问题，但会影响测试）：
 
-- **子元素先于父元素水合**：通过属性（`.articles=${...}`）从父元素传下来的数据，在子元素第一次渲染（水合）时还不存在，于是渲染出不一样的结构，触发 `hydration template mismatch` 并整段重渲染。只有 page/layout 元素能拿到数据，因为 gemkit 在定义它们之前就设好了属性。规避方式：文章列表、首页视图改成模板函数，不做成独立元素。
-- **`<textarea>` 里的子内容绑定会让后面的绑定水合错位**：例如编辑器里 `<textarea>${body}</textarea>` 之后的 `@keydown` 不会绑定。规避方式：改用 `.value=${body}`。
-- **客户端导航先改 URL 再渲染新页面**：和 SvelteKit/Next/Nuxt 的顺序相反，测试和用户脚本可能在中间看到新 URL + 旧页面。
+- **客户端导航先改 URL 再加载数据、渲染新页面**：和 Navigation API 默认的 `intercept()` 行为一致，点击后地址栏立即反馈，Nuxt（vue-router 先提交 URL，新页面在 Suspense 里等 `useFetch`）实际上也是这个顺序；SvelteKit/Next 则是数据加载完再一起更新 URL 和页面，保证 `location` 和 DOM 始终一致。gemkit 的代价是加载期间旧页面仍然显示，测试和用户脚本可能看到新 URL + 旧页面。如果改 URL 后立即渲染目标路由的 pending 状态，就能同时保留即时反馈和一致性。
 
 ## 复现
 

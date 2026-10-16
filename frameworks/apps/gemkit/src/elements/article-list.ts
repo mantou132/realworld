@@ -1,10 +1,8 @@
 import { history } from '@mantou/gem';
 
 import { userStore } from '../stores';
-import { enhance } from './form';
-import { type Article, type ArticleListData, avatar, formatDate } from './types';
-
-// 列表是模板函数而不是元素：子元素在父元素之前水合，通过属性传入的数据在水合时还不存在
+import { enhance } from '../lib/form';
+import { type Article, type ArticleListData, avatar, formatDate } from '../lib/types';
 
 const pageLink = (page: number) => {
   const { path, query } = history.getParams();
@@ -54,22 +52,32 @@ const preview = (article: Article) => html`
   </div>
 `;
 
-/** 调用的元素需要连接 `history.store` 和 `userStore` */
-export function articleList({ articles, pages }: ArticleListData, empty: unknown = 'No articles are here... yet.') {
-  const current = Number(new URLSearchParams(String(history.getParams().query)).get('page')) || 1;
-  return html`
-    ${articles.map(preview)}
-    <div v-if=${!articles.length} class="article-preview empty-feed-message">${empty}</div>
-    <nav v-if=${pages > 1}>
-      <ul class="pagination">
-        ${Array.from(
-          { length: pages },
-          (_, i) =>
-            html`<li class=${classMap({ 'page-item': true, active: i + 1 === current })}>
-              <a class="page-link" href=${pageLink(i + 1)}>${i + 1}</a>
-            </li>`,
-        )}
-      </ul>
-    </nav>
-  `;
+@customElement('app-article-list')
+@connectStore(history.store)
+@connectStore(userStore)
+export class AppArticleListElement extends GemElement {
+  @property data: ArticleListData;
+  @property empty?: unknown;
+
+  @template()
+  #content = () => {
+    const { articles, pages } = this.data;
+    const empty = this.empty ?? 'No articles are here... yet.';
+    const current = Number(new URLSearchParams(String(history.getParams().query)).get('page')) || 1;
+    return html`
+      ${articles.map(preview)}
+      <div v-if=${!articles.length} class="article-preview empty-feed-message">${empty}</div>
+      <nav v-if=${pages > 1}>
+        <ul class="pagination">
+          ${Array.from(
+            { length: pages },
+            (_, i) =>
+              html`<li class=${classMap({ 'page-item': true, active: i + 1 === current })}>
+                <a class="page-link" href=${pageLink(i + 1)}>${i + 1}</a>
+              </li>`,
+          )}
+        </ul>
+      </nav>
+    `;
+  };
 }
