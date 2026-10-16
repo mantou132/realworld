@@ -1,0 +1,4 @@
+.api/
+node_modules/
+bench/test-results/
+bench/results/e2e-*.txt

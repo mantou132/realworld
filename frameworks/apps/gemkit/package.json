@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "realworld-gemkit",
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "start": "gemkit start"
+  },
+  "dependencies": {
+    "@mantou/gem": "link:../../../../gem/packages/gem",
+    "@mantou/gemkit": "link:../../../../gem/packages/gemkit",
+    "marked": "^16.4.1",
+    "sanitize-html": "^2.17.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^2.0.15",
+    "@types/sanitize-html": "^2.16.0",
+    "typescript": "^7.0.2"
+  }
+}

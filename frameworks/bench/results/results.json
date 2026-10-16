@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-16T03:44:19.749Z",
+  "machine": "Apple M2, 16 GB",
+  "node": "v25.8.1",
+  "runs": 5,
+  "apps": {
+    "sveltekit": {
+      "sourceLines": 1143,
+      "pages": {
+        "home": {
+          "jsRequests": 23,
+          "jsRaw": 104989,
+          "jsGzip": 45046,
+          "htmlRaw": 17150,
+          "htmlGzip": 4822,
+          "lighthouse": {
+            "score": 99,
+            "fcp": 1431,
+            "lcp": 1812,
+            "tbt": 0,
+            "si": 1431
+          },
+          "load": {
+            "rps": 1435,
+            "p50": 13,
+            "p99": 23,
+            "errors": 0
+          }
+        },
+        "article": {
+          "jsRequests": 21,
+          "jsRaw": 104249,
+          "jsGzip": 44291,
+          "htmlRaw": 14707,
+          "htmlGzip": 4877,
+          "lighthouse": {
+            "score": 99,
+            "fcp": 1364,
+            "lcp": 1808,
+            "tbt": 0,
+            "si": 1364
+          },
+          "load": {
+            "rps": 1078,
+            "p50": 17,
+            "p99": 37,
+            "errors": 0
+          }
+        },
+        "profile": {
+          "jsRequests": 24,
+          "jsRaw": 105027,
+          "jsGzip": 45127,
+          "htmlRaw": 13072,
+          "htmlGzip": 4260,
+          "lighthouse": {
+            "score": 99,
+            "fcp": 1433,
+            "lcp": 1816,
+            "tbt": 0,
+            "si": 1433
+          }
+        }
+      },
+      "navigation": 91
+    },
+    "next": {
+      "sourceLines": 2712,
+      "pages": {
+        "home": {
+          "jsRequests": 8,
+          "jsRaw": 356531,
+          "jsGzip": 105944,
+          "htmlRaw": 41639,
+          "htmlGzip": 5741,
+          "lighthouse": {
+            "score": 96,
+            "fcp": 907,
+            "lcp": 2027,
+            "tbt": 7,
+            "si": 908
+          },
+          "load": {
+            "rps": 252,
+            "p50": 77,
+            "p99": 134,
+            "errors": 0
+          }
+        },
+        "article": {
+          "jsRequests": 9,
+          "jsRaw": 445304,
+          "jsGzip": 129556,
+          "htmlRaw": 33193,
+          "htmlGzip": 5837,
+          "lighthouse": {
+            "score": 96,
+            "fcp": 1658,
+            "lcp": 2712,
+            "tbt": 18,
+            "si": 1658
+          },
+          "load": {
+            "rps": 257,
+            "p50": 72,
+            "p99": 156,
+            "errors": 0
+          }
+        },
+        "profile": {
+          "jsRequests": 9,
+          "jsRaw": 358946,
+          "jsGzip": 107101,
+          "htmlRaw": 31919,
+          "htmlGzip": 4881,
+          "lighthouse": {
+            "score": 94,
+            "fcp": 910,
+            "lcp": 2793,
+            "tbt": 14,
+            "si": 910
+          }
+        }
+      },
+      "navigation": 90
+    },
+    "nuxt": {
+      "sourceLines": 711,
+      "pages": {
+        "home": {
+          "jsRequests": 15,
+          "jsRaw": 230916,
+          "jsGzip": 87844,
+          "htmlRaw": 14928,
+          "htmlGzip": 3066,
+          "lighthouse": {
+            "score": 89,
+            "fcp": 2855,
+            "lcp": 3006,
+            "tbt": 2,
+            "si": 2855
+          },
+          "load": {
+            "rps": 854,
+            "p50": 22,
+            "p99": 44,
+            "errors": 0
+          }
+        },
+        "article": {
+          "jsRequests": 14,
+          "jsRaw": 230597,
+          "jsGzip": 87587,
+          "htmlRaw": 12728,
+          "htmlGzip": 2938,
+          "lighthouse": {
+            "score": 91,
+            "fcp": 2703,
+            "lcp": 2854,
+            "tbt": 0,
+            "si": 2703
+          },
+          "load": {
+            "rps": 894,
+            "p50": 20,
+            "p99": 54,
+            "errors": 0
+          }
+        },
+        "profile": {
+          "jsRequests": 15,
+          "jsRaw": 230875,
+          "jsGzip": 87809,
+          "htmlRaw": 11741,
+          "htmlGzip": 2481,
+          "lighthouse": {
+            "score": 91,
+            "fcp": 2703,
+            "lcp": 2855,
+            "tbt": 0,
+            "si": 2703
+          }
+        }
+      },
+      "navigation": 101
+    },
+    "gemkit": {
+      "sourceLines": 958,
+      "pages": {
+        "home": {
+          "jsRequests": 2,
+          "jsRaw": 71669,
+          "jsGzip": 25599,
+          "htmlRaw": 21293,
+          "htmlGzip": 3087,
+          "lighthouse": {
+            "score": 99,
+            "fcp": 1352,
+            "lcp": 2145,
+            "tbt": 0,
+            "si": 1352
+          },
+          "load": {
+            "rps": 661,
+            "p50": 27,
+            "p99": 76,
+            "errors": 0
+          }
+        },
+        "article": {
+          "jsRequests": 2,
+          "jsRaw": 72671,
+          "jsGzip": 25701,
+          "htmlRaw": 16230,
+          "htmlGzip": 3335,
+          "lighthouse": {
+            "score": 99,
+            "fcp": 1352,
+            "lcp": 2144,
+            "tbt": 0,
+            "si": 1352
+          },
+          "load": {
+            "rps": 871,
+            "p50": 20,
+            "p99": 58,
+            "errors": 0
+          }
+        },
+        "profile": {
+          "jsRequests": 3,
+          "jsRaw": 72720,
+          "jsGzip": 26297,
+          "htmlRaw": 15410,
+          "htmlGzip": 2528,
+          "lighthouse": {
+            "score": 99,
+            "fcp": 1352,
+            "lcp": 2146,
+            "tbt": 0,
+            "si": 1352
+          }
+        }
+      },
+      "navigation": 83
+    }
+  }
+}

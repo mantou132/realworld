@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "realworld-nuxt",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "marked": "^16.4.1",
+    "nuxt": "^4.6.1",
+    "sanitize-html": "^2.17.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/sanitize-html": "^2.16.0"
+  }
+}
