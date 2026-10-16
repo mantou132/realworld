@@ -19,66 +19,72 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-16, Lighthouse median of 5 runs
 
 |  | Home | Article | Profile | JS requests (home) |
 | --- | ---: | ---: | ---: | ---: |
-| gemkit | 25.0 | 25.1 | 25.7 | 2 |
+| gemkit | 25.3 | 25.3 | 26.0 | 2 |
 | sveltekit | 44.0 | 43.3 | 44.1 | 23 |
 | nuxt | 85.8 | 85.5 | 85.8 | 15 |
 | next | 103.5 | 126.5 | 104.6 | 8 |
 
-### Lighthouse: home (mobile, simulated throttling)
+### Lighthouse: home (mobile, simulated throttling, behind a compressing proxy)
 
 |  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| gemkit | 99 | 1352 | 2145 | 0 | 1352 | 3.0 |
-| sveltekit | 99 | 1431 | 1812 | 0 | 1431 | 4.7 |
-| nuxt | 89 | 2855 | 3006 | 2 | 2855 | 3.0 |
-| next | 96 | 907 | 2027 | 7 | 908 | 5.6 |
+| gemkit | 100 | 907 | 1551 | 0 | 907 | 3.0 |
+| sveltekit | 100 | 1285 | 1670 | 0 | 1285 | 4.7 |
+| nuxt | 99 | 1656 | 1806 | 2 | 1656 | 3.0 |
+| next | 96 | 911 | 2041 | 8 | 911 | 5.6 |
 
-### Lighthouse: article (mobile, simulated throttling)
-
-|  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| gemkit | 99 | 1352 | 2144 | 0 | 1352 | 3.3 |
-| sveltekit | 99 | 1364 | 1808 | 0 | 1364 | 4.8 |
-| nuxt | 91 | 2703 | 2854 | 0 | 2703 | 2.9 |
-| next | 96 | 1658 | 2712 | 18 | 1658 | 5.7 |
-
-### Lighthouse: profile (mobile, simulated throttling)
+### Lighthouse: article (mobile, simulated throttling, behind a compressing proxy)
 
 |  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| gemkit | 99 | 1352 | 2146 | 0 | 1352 | 2.5 |
-| sveltekit | 99 | 1433 | 1816 | 0 | 1433 | 4.2 |
-| nuxt | 91 | 2703 | 2855 | 0 | 2703 | 2.4 |
-| next | 94 | 910 | 2793 | 14 | 910 | 4.8 |
+| gemkit | 100 | 904 | 1548 | 0 | 904 | 3.3 |
+| sveltekit | 100 | 1292 | 1667 | 0 | 1292 | 4.8 |
+| nuxt | 99 | 1655 | 1655 | 0 | 1655 | 2.9 |
+| next | 96 | 1662 | 2562 | 7 | 1662 | 5.7 |
 
-### SSR throughput (autocannon, 20 connections, 10 s)
+### Lighthouse: profile (mobile, simulated throttling, behind a compressing proxy)
+
+|  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| gemkit | 100 | 906 | 1548 | 0 | 906 | 2.5 |
+| sveltekit | 100 | 1287 | 1673 | 0 | 1287 | 4.2 |
+| nuxt | 99 | 1655 | 1805 | 0 | 1655 | 2.4 |
+| next | 94 | 917 | 2713 | 9 | 917 | 4.8 |
+
+### SSR throughput (autocannon, 20 connections, 10 s, median of 5 rounds)
 
 |  | Home req/s | Home p50 / p99 (ms) | Article req/s | Article p50 / p99 (ms) |
 | --- | ---: | ---: | ---: | ---: |
-| gemkit | 661 | 27 / 76 | 871 | 20 / 58 |
-| sveltekit | 1435 | 13 / 23 | 1078 | 17 / 37 |
-| nuxt | 854 | 22 / 44 | 894 | 20 / 54 |
-| next | 252 | 77 / 134 | 257 | 72 / 156 |
+| gemkit | 1368 | 14 / 24 | 1393 | 13 / 27 |
+| sveltekit | 1353 | 13 / 27 | 1299 | 13 / 27 |
+| nuxt | 911 | 20 / 41 | 1065 | 18 / 34 |
+| next | 280 | 65 / 130 | 315 | 58 / 115 |
 
 ### Other
 
 |  | Client navigation home → article (ms) | Source lines | Official e2e passed |
 | --- | ---: | ---: | ---: |
-| gemkit | 83 | 954 | 88 / 91 |
-| sveltekit | 91 | 1143 | 6 / 93 |
-| nuxt | 101 | 711 | 87 / 91 |
-| next | 90 | 2712 | 62 / 91 |
+| gemkit | 84 | 954 | 88 / 91 |
+| sveltekit | 81 | 1143 | 6 / 93 |
+| nuxt | 98 | 711 | 87 / 91 |
+| next | 92 | 2712 | 62 / 91 |
 
 > SSR 吞吐受共享后端限制：首页每次渲染要请求 `/api/articles` 和 `/api/tags`，后端单独压测分别是 2053 和 6892 req/s。所以这里比较的是同一后端下各框架的相对开销，不是框架的极限。
+
+### 测量方法
+
+- **Lighthouse、JS 体积、客户端导航**：经过 [`bench/proxy.mjs`](bench/proxy.mjs) 访问。这个代理模拟部署时的 CDN / 反向代理，向应用请求未压缩的内容，统一用 brotli（等级 5）压缩文本和未压缩的字体，每个 chunk 都 flush，不影响流式 SSR。各框架服务器默认的压缩行为不一样：Next 动态 gzip，SvelteKit（`adapter-node`）只给静态资源预压缩、HTML 不压缩，Nuxt 和 gemkit 都不压缩。实际部署时压缩通常由 CDN 或反向代理负责，所以这里统一交给代理，不比较各框架的默认值。
+- **SSR 吞吐**：直连应用，autocannon 不发送 `Accept-Encoding`，各框架都不压缩。单次压测受机器状态影响很大（同一应用前后两次可以差 30% 以上），所以 4 个应用轮流测 5 轮，每轮换一次顺序，取 req/s 的中位数。
+- **JS 体积**：统一用 gzip -6 计算，不依赖服务器的压缩设置。
 
 ### 怎么读这些数据
 
 - **JS 体积**：gemkit 首页只有 2 个 JS 请求、25 kB（gzip），约为 SvelteKit 的 57%、Nuxt 的 29%、Next 的 24%。
-- **Lighthouse**：gemkit 和 SvelteKit 都是 99 分，TBT 都是 0。gemkit 的 FCP 略快，LCP 比 SvelteKit 慢约 300 ms，原因还没查清楚。
-- **Nuxt 的 FCP 慢**：Nuxt 默认把整个客户端模块图（15 个 JS、约 230 kB 未压缩）和两个阻塞渲染的 CSS 一起 modulepreload。在 Lighthouse 模拟的慢网络下，CSS 被挤到 1.2–1.5 s 后才到，FCP 被拖到约 2.8 s。这是 Nuxt 的默认行为，不是配置错误。
-- **Next 的 FCP 快、LCP 慢**：RSC 流式输出让首屏很早出现，但客户端要下载 100–130 kB 的 JS。
-- **SSR 吞吐**：gemkit 是 SvelteKit 的 46%（首页）/ 81%（文章页）；首页比 Nuxt 低 23%，文章页和 Nuxt 持平；是 Next 的 2.6–3.4 倍。gemkit SSR 慢在哪里还没有做 profiling。
-- **客户端导航**：首页点击文章到标题出现，四个框架都在 80–100 ms 之间，主要是一次数据请求的时间，差别不大。
+- **Lighthouse**：gemkit 和 SvelteKit 都是 100 分，TBT 都是 0。gemkit 的 FCP 约 0.9 s，比 SvelteKit 快约 380 ms，LCP 快约 120 ms。之前直连测时 gemkit 的 LCP 比 SvelteKit 慢约 300 ms，原因是 gemkit 服务器不压缩：两个阻塞渲染的 CSS（ionicons 和主题）未压缩是 80 kB，SvelteKit 发的是预压缩的 11 kB。
+- **Nuxt 的 FCP 慢**：之前直连测时约 2.8 s，主要也是因为 Nuxt 服务器不压缩。统一压缩后是 1.66 s，仍比其他框架慢：Nuxt 默认把整个客户端模块图（15 个 JS、约 230 kB 未压缩）和阻塞渲染的 CSS 一起 modulepreload，在 Lighthouse 模拟的慢网络下 CSS 要和 JS 抢带宽。这是 Nuxt 的默认行为，不是配置错误。
+- **Next 的 FCP 快、LCP 慢**：RSC 流式输出让首屏很早出现（首页、个人页约 0.9 s），但客户端要下载 100–130 kB 的 JS，LCP 在 2.0–2.7 s。
+- **SSR 吞吐**：gemkit 和 SvelteKit 基本持平（首页 1368 / 1353，文章页 1393 / 1299 req/s，前三轮两者互有高低，差别在波动范围内），比 Nuxt 高 30–50%，是 Next 的 4.4–4.9 倍。gemkit profiling 后修复了两处开销（见下面“框架问题”），首页从 661 提高到约 1370 req/s。压测时 gemkit 进程约 44% 的时间在等后端，gemkit 和 SvelteKit 都已经接近后端的上限。
+- **客户端导航**：首页点击文章到标题出现，取 15 次的中位数，四个框架都在 80–100 ms 之间，主要是一次数据请求的时间，差别不大。单次波动在 50–100 ms 之间。
 - **源码行数**：不含共享主题 CSS、静态资源和生成的类型文件。Next 版多是因为它用了 container/presentation 分层和 zod schema。
 
 ### e2e
@@ -107,6 +113,9 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-16, Lighthouse median of 5 runs
 - 页面级 `load` 中 `redirect()` 时 SSR 返回 500
 - Light DOM 元素模板返回 `undefined` 时，SSR 不输出 `innerHTML`
 - 子元素先于父元素水合：通过属性（`.articles=${...}`）从父元素传下来的数据，在子元素第一次渲染（水合）时还不存在，触发 `hydration template mismatch` 并整段重渲染 → 父模板设置了属性的子元素推迟到父模板水合后再挂载。文章列表、首页视图因此可以做成独立元素（`<app-article-list>`、`<app-home>`），之前只能写成模板函数
+- SSR 性能（CPU profiling 发现）：
+  - `matchPath` 每次调用都新建 `URLPattern`，一次首页渲染要匹配约 40 次（每个 outlet 查找路由、每个路由的 `getContent` 检查是否匹配），占 CPU 时间 12% → 缓存编译后的 pattern；不含参数的 pattern 直接比较字符串（`URLPattern.exec` 每次约 2.5 µs，是正则的约 80 倍）
+  - 响应流经过 `TextEncoderStream`，多一层 TransformStream，占 CPU 时间约 10% → 在 `ReadableStream` 的 `pull` 中直接用 `TextEncoder` 编码
 
 设计差异（不算问题，但会影响测试）：
 
@@ -124,7 +133,7 @@ frameworks/bench/api.sh
 cd frameworks/bench && pnpm install && cd ../..
 frameworks/bench/build.sh                     # 安装依赖并构建 4 个应用
 frameworks/bench/e2e.sh                       # 官方 e2e，会写入测试数据，跑完后重启 api.sh
-node frameworks/bench/measure.mjs             # JS 体积、Lighthouse、SSR 吞吐、客户端导航
+node frameworks/bench/measure.mjs             # JS 体积、Lighthouse、客户端导航（经过压缩代理）、SSR 吞吐（直连，轮流 5 轮）
 node frameworks/bench/report.mjs              # 输出上面的表格
 ```
 

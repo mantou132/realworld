@@ -2,7 +2,7 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
-const { apps, machine, node, runs, date } = JSON.parse(
+const { apps, machine, node, runs, loadRounds = 1, date } = JSON.parse(
   readFileSync(path.join(import.meta.dirname, 'results/results.json'), 'utf8'),
 );
 const names = ['gemkit', 'sveltekit', 'nuxt', 'next'].filter((name) => apps[name]);
@@ -33,7 +33,7 @@ console.log(
 );
 
 for (const page of ['home', 'article', 'profile']) {
-  console.log(`\n### Lighthouse: ${page} (mobile, simulated throttling)\n`);
+  console.log(`\n### Lighthouse: ${page} (mobile, simulated throttling, behind a compressing proxy)\n`);
   console.log(
     table(
       ['', 'Score', 'FCP (ms)', 'LCP (ms)', 'TBT (ms)', 'Speed Index (ms)', 'HTML (gzip, KB)'],
@@ -45,7 +45,7 @@ for (const page of ['home', 'article', 'profile']) {
   );
 }
 
-console.log('\n### SSR throughput (autocannon, 20 connections, 10 s)\n');
+console.log(`\n### SSR throughput (autocannon, 20 connections, 10 s, median of ${loadRounds} rounds)\n`);
 console.log(
   table(
     ['', 'Home req/s', 'Home p50 / p99 (ms)', 'Article req/s', 'Article p50 / p99 (ms)'],

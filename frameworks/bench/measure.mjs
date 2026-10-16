@@ -1,5 +1,6 @@
 // Builds nothing: run `bench/build.sh` first and keep `bench/api.sh` running.
 // Usage: node bench/measure.mjs [app...]
+// LOAD_ONLY=1 只测 SSR 吞吐，LOAD_ROUNDS 是吞吐测试的轮数（默认 5）
 import { spawn } from 'node:child_process';
 import { readdirSync, readFileSync, statSync, writeFileSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
@@ -11,10 +12,14 @@ import * as chromeLauncher from 'chrome-launcher';
 import lighthouse from 'lighthouse';
 import { chromium } from 'playwright-core';
 
+import { startProxy } from './proxy.mjs';
+
 const ROOT = path.resolve(import.meta.dirname, '..');
 const API = process.env.API_BASE || 'http://localhost:3100/api';
 const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary';
 const RUNS = Number(process.env.RUNS) || 5;
+const LOAD_ROUNDS = Number(process.env.LOAD_ROUNDS) || 5;
+const LOAD_ONLY = !!process.env.LOAD_ONLY;
 
 const apps = [
   { name: 'sveltekit', port: 4001, cmd: 'node build', env: { API_BASE: API }, profile: '/profile/@johndoe' },
@@ -88,10 +93,10 @@ async function measureBytes(browser, url) {
   };
 }
 
-/** 客户端导航：首页点击第一篇文章，到文章标题出现的时间 */
+/** 客户端导航：首页点击第一篇文章，到文章标题出现的时间（单次波动大，取 3 倍次数的中位数） */
 async function measureNavigation(browser, url) {
   const times = [];
-  for (let i = 0; i < RUNS; i++) {
+  for (let i = 0; i < RUNS * 3; i++) {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle' });
     await sleep(300);
@@ -147,53 +152,84 @@ const resultsFile = path.join(ROOT, 'bench/results/results.json');
 /** 每测完一个应用就写入，和已有的结果合并 */
 function save() {
   mkdirSync(path.dirname(resultsFile), { recursive: true });
-  let previous = {};
-  try {
-    previous = JSON.parse(readFileSync(resultsFile, 'utf8')).apps;
-  } catch {}
   const output = {
     date: new Date().toISOString(),
     machine: process.env.BENCH_MACHINE || `${process.platform} ${process.arch}`,
     node: process.version,
     runs: RUNS,
-    apps: { ...previous, ...results },
+    loadRounds: LOAD_ROUNDS,
+    apps: results,
   };
   writeFileSync(resultsFile, `${JSON.stringify(output, null, 2)}\n`);
 }
 
-const chrome = await chromeLauncher.launch({ chromePath: CHROME, chromeFlags: ['--headless=new'] });
-const browser = await chromium.launch({ executablePath: CHROME });
+const selectedApps = apps.filter((a) => !selected.length || selected.includes(a.name));
 const results = {};
+try {
+  Object.assign(results, JSON.parse(readFileSync(resultsFile, 'utf8')).apps);
+} catch {}
 
-for (const app of apps.filter((a) => !selected.length || selected.includes(a.name))) {
-  console.log(`\n== ${app.name}`);
-  const server = await startApp(app);
-  try {
-    const result = {
-      sourceLines: sources[app.name].reduce((n, dir) => n + countLines(path.join(ROOT, 'apps', app.name, dir)), 0),
-      pages: {},
-    };
-    for (const [name, pathname] of Object.entries(pages)) {
-      const url = server.url + (name === 'profile' && app.profile ? app.profile : pathname);
-      result.pages[name] = {
-        ...(await measureBytes(browser, url)),
-        lighthouse: await runLighthouse(chrome.port, url),
-        ...(name !== 'profile' && { load: await runLoad(url) }),
+if (!LOAD_ONLY) {
+  const chrome = await chromeLauncher.launch({ chromePath: CHROME, chromeFlags: ['--headless=new'] });
+  const browser = await chromium.launch({ executablePath: CHROME });
+  for (const app of selectedApps) {
+    console.log(`\n== ${app.name}`);
+    const server = await startApp(app);
+    // 浏览器测量经过统一压缩的代理（模拟 CDN / 反向代理）
+    const proxy = await startProxy(server.url, app.port + 1000);
+    try {
+      const result = {
+        sourceLines: sources[app.name].reduce((n, dir) => n + countLines(path.join(ROOT, 'apps', app.name, dir)), 0),
+        pages: {},
       };
-      console.log(name, JSON.stringify(result.pages[name]));
+      for (const [name, pathname] of Object.entries(pages)) {
+        const url = proxy.url + (name === 'profile' && app.profile ? app.profile : pathname);
+        result.pages[name] = {
+          ...(await measureBytes(browser, url)),
+          lighthouse: await runLighthouse(chrome.port, url),
+          ...(results[app.name]?.pages[name]?.load && { load: results[app.name].pages[name].load }),
+        };
+        console.log(name, JSON.stringify(result.pages[name]));
+      }
+      result.navigation = await measureNavigation(browser, proxy.url).catch((err) => {
+        console.error('navigation failed', err.message);
+        return null;
+      });
+      console.log('navigation', result.navigation);
+      results[app.name] = result;
+      save();
+    } finally {
+      proxy.close();
+      server.stop();
+      await sleep(500);
     }
-    result.navigation = await measureNavigation(browser, server.url).catch((err) => {
-      console.error('navigation failed', err.message);
-      return null;
-    });
-    console.log('navigation', result.navigation);
-    results[app.name] = result;
-    save();
-  } finally {
-    server.stop();
-    await sleep(500);
   }
+  await browser.close();
+  chrome.kill();
 }
 
-await browser.close();
-chrome.kill();
+// SSR 吞吐直连应用。单次结果受机器状态影响大，各应用轮流测 LOAD_ROUNDS 轮，每轮换一次顺序，取 req/s 中位数那一轮
+const loadRuns = {};
+for (let round = 0; round < LOAD_ROUNDS; round++) {
+  const order = selectedApps.map((_, i) => selectedApps[(i + round) % selectedApps.length]);
+  for (const app of order) {
+    const server = await startApp(app);
+    try {
+      for (const name of ['home', 'article']) {
+        const run = await runLoad(server.url + pages[name]);
+        (loadRuns[`${app.name}.${name}`] ??= []).push(run);
+        console.log(`load round ${round + 1}`, app.name, name, JSON.stringify(run));
+      }
+    } finally {
+      server.stop();
+      await sleep(500);
+    }
+  }
+}
+for (const app of selectedApps) {
+  for (const name of ['home', 'article']) {
+    const runs = loadRuns[`${app.name}.${name}`];
+    results[app.name].pages[name].load = [...runs].sort((a, b) => a.rps - b.rps)[Math.floor(runs.length / 2)];
+  }
+}
+save();

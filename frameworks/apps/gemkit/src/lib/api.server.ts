@@ -9,7 +9,14 @@ type Context = Pick<ServerLoadContext, 'cookies'>;
 /** 和 SvelteKit 版一样，登录用户（包含 token）以 base64 JSON 保存在 httpOnly cookie 中 */
 export function getUser({ cookies }: Context): (User & { token: string }) | null {
   const jwt = cookies.get('jwt');
-  return jwt ? JSON.parse(atob(jwt)) : null;
+  if (!jwt) return null;
+  try {
+    return JSON.parse(atob(jwt));
+  } catch {
+    // 无法解析的 cookie 按未登录处理并清除，避免每个页面都报错
+    cookies.delete('jwt');
+    return null;
+  }
 }
 
 export function setUser({ cookies }: Context, user: User & { token: string }) {
@@ -22,7 +29,7 @@ export function requireUser(ctx: Context) {
   return user;
 }
 
-/** 422 等返回 `{ errors }`，404 渲染 404 页面，其他错误抛出 */
+/** 422 等返回 `{ errors }`，带 token 的请求 401 时清除登录并跳转到登录页，404 渲染 404 页面，其他错误抛出 */
 export async function api<T = any>(ctx: Context, path: string, method = 'GET', data?: unknown): Promise<T> {
   const token = getUser(ctx)?.token;
   const res = await fetch(`${base}/${path}`, {
@@ -33,6 +40,11 @@ export async function api<T = any>(ctx: Context, path: string, method = 'GET', d
     },
     body: data === undefined ? undefined : JSON.stringify(data),
   });
+  // token 过期或无效；不带 token 的 401（登录密码错误）作为表单错误返回
+  if (res.status === 401 && token) {
+    ctx.cookies.delete('jwt');
+    redirect(302, '/login');
+  }
   if (res.ok || res.status === 422 || res.status === 401 || res.status === 403) {
     const text = await res.text();
     return text ? JSON.parse(text) : ({} as T);
