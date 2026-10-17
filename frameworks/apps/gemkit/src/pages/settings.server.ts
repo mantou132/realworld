@@ -1,14 +1,9 @@
 import { redirect, type ServerLoadContext } from '@mantou/gemkit';
 
-import { api, formString, requireUser, setUser } from '../lib/api.server';
-
-export function load(ctx: ServerLoadContext) {
-  requireUser(ctx);
-}
+import { api, formString, setUser } from '../lib/api.server';
 
 export const actions = {
   save: async (ctx: ServerLoadContext) => {
-    requireUser(ctx);
     const form = await ctx.request.formData();
     const password = formString(form, 'password');
     const user = {
@@ -25,6 +20,7 @@ export const actions = {
   },
   logout: (ctx: ServerLoadContext) => {
     ctx.cookies.delete('jwt');
+    ctx.locals.user = undefined;
     redirect(303, '/');
   },
 };

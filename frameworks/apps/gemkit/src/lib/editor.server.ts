@@ -1,10 +1,9 @@
 import { redirect, type ServerLoadContext } from '@mantou/gemkit';
 
-import { api, formString, requireUser } from './api.server';
+import { api, formString } from './api.server';
 
 /** 发布和更新文章，`slug` 为空时新建 */
 export async function saveArticle(ctx: ServerLoadContext, slug?: string) {
-  requireUser(ctx);
   const form = await ctx.request.formData();
   const article = {
     title: formString(form, 'title'),

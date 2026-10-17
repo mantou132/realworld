@@ -1,10 +1,6 @@
 import { redirect, type ServerLoadContext } from '@mantou/gemkit';
 
-import { api, formString, getUser, setUser } from './api.server';
-
-export function redirectIfSignedIn(ctx: ServerLoadContext) {
-  if (getUser(ctx)) redirect(302, '/');
-}
+import { api, formString, setUser } from './api.server';
 
 /** 登录或注册，成功后保存用户并回到首页 */
 export async function authenticate(ctx: ServerLoadContext, path: 'users' | 'users/login') {

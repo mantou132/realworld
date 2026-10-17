@@ -2,7 +2,7 @@ import { redirect, type ServerLoadContext } from '@mantou/gemkit';
 import { marked } from 'marked';
 import sanitizeHtml from 'sanitize-html';
 
-import { api, formString, requireUser } from '../../lib/api.server';
+import { api, formString } from '../../lib/api.server';
 import type { Article, Comment } from '../../lib/types';
 
 type Context = ServerLoadContext<{ slug: string }>;
@@ -23,27 +23,22 @@ export async function load(ctx: Context): Promise<ArticleData> {
 
 export const actions = {
   createComment: async (ctx: Context) => {
-    requireUser(ctx);
     const form = await ctx.request.formData();
     return api(ctx, `articles/${ctx.params.slug}/comments`, 'POST', { comment: { body: formString(form, 'comment') } });
   },
   deleteComment: async (ctx: Context) => {
-    requireUser(ctx);
     const form = await ctx.request.formData();
     await api(ctx, `articles/${ctx.params.slug}/comments/${formString(form, 'id')}`, 'DELETE');
   },
   deleteArticle: async (ctx: Context) => {
-    requireUser(ctx);
     await api(ctx, `articles/${ctx.params.slug}`, 'DELETE');
     redirect(303, '/');
   },
   toggleFavorite: async (ctx: Context) => {
-    requireUser(ctx);
     const form = await ctx.request.formData();
     await api(ctx, `articles/${ctx.params.slug}/favorite`, form.get('favorited') ? 'DELETE' : 'POST');
   },
   toggleFollow: async (ctx: Context) => {
-    requireUser(ctx);
     const form = await ctx.request.formData();
     await api(ctx, `profiles/${formString(form, 'username')}/follow`, form.get('following') ? 'DELETE' : 'POST');
   },
