@@ -2,7 +2,7 @@
   "config": {
     "argv": [
       "/opt/homebrew/Cellar/node/25.8.1_1/bin/node",
-      "/Users/mantou/realworld/frameworks/bench/node_modules/.pnpm/@playwright+test@1.64.1/node_modules/@playwright/test/cli.js",
+      "/Users/mantou/realworld/frameworks/bench/node_modules/@playwright/test/cli.js",
       "test"
     ],
     "configFile": "/Users/mantou/realworld/frameworks/bench/playwright.config.ts",
@@ -137,7 +137,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11067,
+                      "duration": 11160,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -161,7 +161,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:41:40.742Z",
+                      "startTime": "2026-10-19T01:44:45.126Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -206,7 +206,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10917,
+                      "duration": 11510,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -230,7 +230,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:41:53.095Z",
+                      "startTime": "2026-10-19T01:44:57.944Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -275,7 +275,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10865,
+                      "duration": 10905,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -299,7 +299,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:42:04.669Z",
+                      "startTime": "2026-10-19T01:45:10.317Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -344,7 +344,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10858,
+                      "duration": 10876,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -368,7 +368,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:42:16.303Z",
+                      "startTime": "2026-10-19T01:45:21.951Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -413,7 +413,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10845,
+                      "duration": 10950,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -437,7 +437,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:42:27.778Z",
+                      "startTime": "2026-10-19T01:45:33.482Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -482,7 +482,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10834,
+                      "duration": 10961,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -506,7 +506,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:42:39.307Z",
+                      "startTime": "2026-10-19T01:45:45.362Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -551,7 +551,7 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10825,
+                      "duration": 10863,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -575,7 +575,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:42:50.773Z",
+                      "startTime": "2026-10-19T01:45:57.150Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -620,7 +620,7 @@
                       "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10843,
+                      "duration": 10885,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -644,7 +644,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:43:02.238Z",
+                      "startTime": "2026-10-19T01:46:08.806Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -689,7 +689,7 @@
                       "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10864,
+                      "duration": 10835,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -713,7 +713,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:43:13.791Z",
+                      "startTime": "2026-10-19T01:46:20.366Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -758,7 +758,7 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10863,
+                      "duration": 10864,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:17:5",
@@ -782,7 +782,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:43:25.343Z",
+                      "startTime": "2026-10-19T01:46:31.824Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -844,7 +844,7 @@
                       "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10335,
+                      "duration": 10491,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/auth.spec.ts:9:5",
@@ -868,7 +868,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:43:36.892Z",
+                      "startTime": "2026-10-19T01:46:43.782Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -913,7 +913,7 @@
                       "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10388,
+                      "duration": 10460,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/auth.spec.ts:22:5",
@@ -937,7 +937,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:43:47.947Z",
+                      "startTime": "2026-10-19T01:46:55.162Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -982,7 +982,7 @@
                       "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5386,
+                      "duration": 5436,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.error-messages')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.error-messages') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.error-messages')\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.error-messages')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.error-messages') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.error-messages')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/auth.spec.ts:39:51",
@@ -1006,7 +1006,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:43:59.056Z",
+                      "startTime": "2026-10-19T01:47:06.317Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1051,7 +1051,7 @@
                       "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10355,
+                      "duration": 10378,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/auth.spec.ts:45:5",
@@ -1075,7 +1075,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:05.084Z",
+                      "startTime": "2026-10-19T01:47:12.367Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1120,7 +1120,7 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10430,
+                      "duration": 10373,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/auth.spec.ts:61:5",
@@ -1144,7 +1144,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:16.177Z",
+                      "startTime": "2026-10-19T01:47:23.405Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1189,12 +1189,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 273,
+                      "duration": 371,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:27.336Z",
+                      "startTime": "2026-10-19T01:47:34.563Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1223,7 +1223,7 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10285,
+                      "duration": 10305,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/auth.spec.ts:80:5",
@@ -1247,7 +1247,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:27.907Z",
+                      "startTime": "2026-10-19T01:47:35.258Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1302,12 +1302,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 225,
+                      "duration": 222,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:38.595Z",
+                      "startTime": "2026-10-19T01:47:45.916Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1363,7 +1363,7 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10771,
+                      "duration": 10782,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1387,7 +1387,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:39.142Z",
+                      "startTime": "2026-10-19T01:47:46.455Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1432,7 +1432,7 @@
                       "workerIndex": 17,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10851,
+                      "duration": 10962,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1456,7 +1456,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:44:50.267Z",
+                      "startTime": "2026-10-19T01:47:57.606Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1501,7 +1501,7 @@
                       "workerIndex": 18,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10947,
+                      "duration": 10948,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1525,7 +1525,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:45:01.784Z",
+                      "startTime": "2026-10-19T01:48:09.255Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1570,7 +1570,7 @@
                       "workerIndex": 19,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10837,
+                      "duration": 11210,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1594,7 +1594,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:45:13.410Z",
+                      "startTime": "2026-10-19T01:48:21.091Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1639,7 +1639,7 @@
                       "workerIndex": 20,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10863,
+                      "duration": 10930,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1663,7 +1663,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:45:24.870Z",
+                      "startTime": "2026-10-19T01:48:33.041Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1708,7 +1708,7 @@
                       "workerIndex": 21,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10840,
+                      "duration": 10915,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1732,7 +1732,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:45:36.432Z",
+                      "startTime": "2026-10-19T01:48:44.650Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1777,7 +1777,7 @@
                       "workerIndex": 22,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10857,
+                      "duration": 10973,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1801,7 +1801,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:45:47.889Z",
+                      "startTime": "2026-10-19T01:48:56.312Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1846,7 +1846,7 @@
                       "workerIndex": 23,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10996,
+                      "duration": 10850,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1870,7 +1870,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:45:59.402Z",
+                      "startTime": "2026-10-19T01:49:08.046Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1915,7 +1915,7 @@
                       "workerIndex": 24,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10860,
+                      "duration": 10837,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:14:5",
@@ -1939,7 +1939,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:11.139Z",
+                      "startTime": "2026-10-19T01:49:19.633Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2016,7 +2016,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.666Z",
+                      "startTime": "2026-10-19T01:49:31.118Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2070,7 +2070,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.683Z",
+                      "startTime": "2026-10-19T01:49:31.135Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2124,7 +2124,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.688Z",
+                      "startTime": "2026-10-19T01:49:31.141Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2186,7 +2186,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.692Z",
+                      "startTime": "2026-10-19T01:49:31.145Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2240,7 +2240,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.697Z",
+                      "startTime": "2026-10-19T01:49:31.149Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2302,7 +2302,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.701Z",
+                      "startTime": "2026-10-19T01:49:31.153Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2356,7 +2356,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.707Z",
+                      "startTime": "2026-10-19T01:49:31.159Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2410,7 +2410,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.711Z",
+                      "startTime": "2026-10-19T01:49:31.163Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2472,7 +2472,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.715Z",
+                      "startTime": "2026-10-19T01:49:31.167Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2526,7 +2526,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.722Z",
+                      "startTime": "2026-10-19T01:49:31.174Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2580,7 +2580,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.726Z",
+                      "startTime": "2026-10-19T01:49:31.178Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2634,7 +2634,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.729Z",
+                      "startTime": "2026-10-19T01:49:31.182Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2688,7 +2688,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.733Z",
+                      "startTime": "2026-10-19T01:49:31.186Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2742,7 +2742,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.739Z",
+                      "startTime": "2026-10-19T01:49:31.192Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2796,7 +2796,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.747Z",
+                      "startTime": "2026-10-19T01:49:31.196Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2850,7 +2850,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.752Z",
+                      "startTime": "2026-10-19T01:49:31.202Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2904,7 +2904,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.756Z",
+                      "startTime": "2026-10-19T01:49:31.212Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2966,7 +2966,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.759Z",
+                      "startTime": "2026-10-19T01:49:31.219Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3020,7 +3020,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.762Z",
+                      "startTime": "2026-10-19T01:49:31.222Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3074,7 +3074,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.766Z",
+                      "startTime": "2026-10-19T01:49:31.226Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3128,7 +3128,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.769Z",
+                      "startTime": "2026-10-19T01:49:31.229Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3182,7 +3182,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.773Z",
+                      "startTime": "2026-10-19T01:49:31.233Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3236,7 +3236,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.777Z",
+                      "startTime": "2026-10-19T01:49:31.237Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3290,7 +3290,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.780Z",
+                      "startTime": "2026-10-19T01:49:31.241Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3344,7 +3344,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.787Z",
+                      "startTime": "2026-10-19T01:49:31.247Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3398,7 +3398,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.791Z",
+                      "startTime": "2026-10-19T01:49:31.251Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3452,7 +3452,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.796Z",
+                      "startTime": "2026-10-19T01:49:31.259Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3514,7 +3514,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.800Z",
+                      "startTime": "2026-10-19T01:49:31.263Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3568,7 +3568,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.804Z",
+                      "startTime": "2026-10-19T01:49:31.267Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3622,7 +3622,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.808Z",
+                      "startTime": "2026-10-19T01:49:31.271Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3676,7 +3676,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.817Z",
+                      "startTime": "2026-10-19T01:49:31.276Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3732,12 +3732,12 @@
                       "workerIndex": 25,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 334,
+                      "duration": 350,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:22.822Z",
+                      "startTime": "2026-10-19T01:49:31.289Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3766,12 +3766,12 @@
                       "workerIndex": 25,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1765,
+                      "duration": 2336,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:23.401Z",
+                      "startTime": "2026-10-19T01:49:31.936Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3800,7 +3800,7 @@
                       "workerIndex": 25,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10200,
+                      "duration": 10204,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('h1')\nExpected substring: \u001b[32m\"Sign \u001b[7mi\u001b[27mn\"\u001b[39m\nReceived string:    \u001b[31m\"Sign \u001b[7mI\u001b[27mn\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('h1') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    24 × locator resolved to <h1 class=\"text-xs-center\">Sign In</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Sign In\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('h1')\nExpected substring: \u001b[32m\"Sign \u001b[7mi\u001b[27mn\"\u001b[39m\nReceived string:    \u001b[31m\"Sign \u001b[7mI\u001b[27mn\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('h1') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    24 × locator resolved to <h1 class=\"text-xs-center\">Sign In</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Sign In\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/health.spec.ts:25:38",
@@ -3824,7 +3824,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:25.177Z",
+                      "startTime": "2026-10-19T01:49:34.284Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3869,12 +3869,12 @@
                       "workerIndex": 26,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 306,
+                      "duration": 260,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:35.749Z",
+                      "startTime": "2026-10-19T01:49:44.874Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3920,12 +3920,12 @@
                       "workerIndex": 26,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1330,
+                      "duration": 1493,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:36.318Z",
+                      "startTime": "2026-10-19T01:49:45.455Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3954,7 +3954,7 @@
                       "workerIndex": 26,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11260,
+                      "duration": 11296,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:42:5",
@@ -3978,7 +3978,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:37.658Z",
+                      "startTime": "2026-10-19T01:49:46.959Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4023,7 +4023,7 @@
                       "workerIndex": 27,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11359,
+                      "duration": 11356,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:65:5",
@@ -4047,7 +4047,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:46:49.293Z",
+                      "startTime": "2026-10-19T01:49:58.640Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4092,7 +4092,7 @@
                       "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11390,
+                      "duration": 11348,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:112:5",
@@ -4116,7 +4116,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:47:01.336Z",
+                      "startTime": "2026-10-19T01:50:10.714Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4161,7 +4161,7 @@
                       "workerIndex": 29,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11313,
+                      "duration": 11373,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:141:5",
@@ -4185,7 +4185,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:47:13.346Z",
+                      "startTime": "2026-10-19T01:50:22.703Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4230,7 +4230,7 @@
                       "workerIndex": 30,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 16061,
+                      "duration": 16066,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -4251,7 +4251,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:47:25.300Z",
+                      "startTime": "2026-10-19T01:50:34.729Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4291,7 +4291,7 @@
                       "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11326,
+                      "duration": 11350,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:185:5",
@@ -4315,7 +4315,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:47:41.954Z",
+                      "startTime": "2026-10-19T01:50:51.461Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4360,7 +4360,7 @@
                       "workerIndex": 32,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11343,
+                      "duration": 11450,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:202:5",
@@ -4384,7 +4384,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:47:53.923Z",
+                      "startTime": "2026-10-19T01:51:03.503Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4429,7 +4429,7 @@
                       "workerIndex": 33,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11320,
+                      "duration": 11348,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:229:5",
@@ -4453,7 +4453,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:48:05.926Z",
+                      "startTime": "2026-10-19T01:51:15.654Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4515,7 +4515,7 @@
                       "workerIndex": 34,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10434,
+                      "duration": 10442,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:24:5",
@@ -4539,7 +4539,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:48:17.926Z",
+                      "startTime": "2026-10-19T01:51:27.630Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4584,7 +4584,7 @@
                       "workerIndex": 35,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10437,
+                      "duration": 10426,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:35:5",
@@ -4608,7 +4608,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:48:28.998Z",
+                      "startTime": "2026-10-19T01:51:38.672Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4653,7 +4653,7 @@
                       "workerIndex": 36,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10434,
+                      "duration": 10458,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:44:5",
@@ -4677,7 +4677,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:48:40.060Z",
+                      "startTime": "2026-10-19T01:51:49.782Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4722,7 +4722,7 @@
                       "workerIndex": 37,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10421,
+                      "duration": 10502,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:55:5",
@@ -4746,7 +4746,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:48:51.138Z",
+                      "startTime": "2026-10-19T01:52:00.879Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4791,7 +4791,7 @@
                       "workerIndex": 38,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15157,
+                      "duration": 15164,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -4812,7 +4812,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:49:02.204Z",
+                      "startTime": "2026-10-19T01:52:12.103Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4852,7 +4852,7 @@
                       "workerIndex": 39,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15142,
+                      "duration": 15164,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -4873,7 +4873,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:49:18.048Z",
+                      "startTime": "2026-10-19T01:52:27.892Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4913,7 +4913,7 @@
                       "workerIndex": 40,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10536,
+                      "duration": 10532,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:109:5",
@@ -4937,7 +4937,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:49:33.823Z",
+                      "startTime": "2026-10-19T01:52:43.790Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4982,7 +4982,7 @@
                       "workerIndex": 41,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15161,
+                      "duration": 15166,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -5003,7 +5003,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:49:45.254Z",
+                      "startTime": "2026-10-19T01:52:55.003Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5043,7 +5043,7 @@
                       "workerIndex": 42,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10480,
+                      "duration": 10458,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:140:5",
@@ -5067,7 +5067,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:50:01.114Z",
+                      "startTime": "2026-10-19T01:53:10.837Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5112,7 +5112,7 @@
                       "workerIndex": 43,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10418,
+                      "duration": 10450,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:147:5",
@@ -5136,7 +5136,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:50:12.325Z",
+                      "startTime": "2026-10-19T01:53:21.917Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5181,10 +5181,10 @@
                       "workerIndex": 44,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6450,
+                      "duration": 6467,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected pattern: \u001b[32m/\\.(svg|jpe?g|png|webp)(\\?.*)?$/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\u001b[2m    14 × locator resolved to <img alt=\"testuser1792118845716\"/>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected pattern: \u001b[32m/\\.(svg|jpe?g|png|webp)(\\?.*)?$/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\u001b[2m    14 × locator resolved to <img alt=\"testuser1792118845716\"/>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:169:25",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected pattern: \u001b[32m/\\.(svg|jpe?g|png|webp)(\\?.*)?$/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\u001b[2m    14 × locator resolved to <img alt=\"testuser1792374635219\"/>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected pattern: \u001b[32m/\\.(svg|jpe?g|png|webp)(\\?.*)?$/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\u001b[2m    14 × locator resolved to <img alt=\"testuser1792374635219\"/>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:169:25",
                         "location": {
                           "file": "/Users/mantou/realworld/specs/e2e/null-fields.spec.ts",
                           "column": 25,
@@ -5199,13 +5199,13 @@
                             "column": 25,
                             "line": 169
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected pattern: \u001b[32m/\\.(svg|jpe?g|png|webp)(\\?.*)?$/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\u001b[2m    14 × locator resolved to <img alt=\"testuser1792118845716\"/>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n\n\n  167 |       const img = preview.locator('.article-meta img');\n  168 |       await expect(img).toBeVisible();\n> 169 |       await expect(img).toHaveAttribute('src', /\\.(svg|jpe?g|png|webp)(\\?.*)?$/i);\n      |                         ^\n  170 |       await expect\n  171 |         .poll(\n  172 |           () => img.evaluate((el: HTMLImageElement) => el.complete && el.naturalWidth > 0),\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:169:25"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected pattern: \u001b[32m/\\.(svg|jpe?g|png|webp)(\\?.*)?$/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\u001b[2m    14 × locator resolved to <img alt=\"testuser1792374635219\"/>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n\n\n  167 |       const img = preview.locator('.article-meta img');\n  168 |       await expect(img).toBeVisible();\n> 169 |       await expect(img).toHaveAttribute('src', /\\.(svg|jpe?g|png|webp)(\\?.*)?$/i);\n      |                         ^\n  170 |       await expect\n  171 |         .poll(\n  172 |           () => img.evaluate((el: HTMLImageElement) => el.complete && el.naturalWidth > 0),\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:169:25"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:50:23.353Z",
+                      "startTime": "2026-10-19T01:53:32.968Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5267,7 +5267,7 @@
                       "workerIndex": 45,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10831,
+                      "duration": 11020,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:22:5",
@@ -5291,7 +5291,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:50:30.423Z",
+                      "startTime": "2026-10-19T01:53:40.010Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5336,7 +5336,7 @@
                       "workerIndex": 46,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10882,
+                      "duration": 10842,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:70:5",
@@ -5360,7 +5360,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:50:41.896Z",
+                      "startTime": "2026-10-19T01:53:51.654Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5405,7 +5405,7 @@
                       "workerIndex": 47,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10830,
+                      "duration": 10853,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:109:5",
@@ -5429,7 +5429,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:50:53.409Z",
+                      "startTime": "2026-10-19T01:54:03.143Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5474,7 +5474,7 @@
                       "workerIndex": 48,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10857,
+                      "duration": 10878,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:152:5",
@@ -5498,7 +5498,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:51:04.901Z",
+                      "startTime": "2026-10-19T01:54:14.664Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5543,7 +5543,7 @@
                       "workerIndex": 49,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11056,
+                      "duration": 10899,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:177:5",
@@ -5567,7 +5567,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:51:16.473Z",
+                      "startTime": "2026-10-19T01:54:26.182Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5612,7 +5612,7 @@
                       "workerIndex": 50,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10946,
+                      "duration": 10847,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:202:5",
@@ -5636,7 +5636,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:51:28.185Z",
+                      "startTime": "2026-10-19T01:54:37.762Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5681,7 +5681,7 @@
                       "workerIndex": 51,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10900,
+                      "duration": 10861,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/settings.spec.ts:227:5",
@@ -5705,7 +5705,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:51:39.797Z",
+                      "startTime": "2026-10-19T01:54:49.230Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5767,7 +5767,7 @@
                       "workerIndex": 52,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10865,
+                      "duration": 10884,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/social.spec.ts:25:5",
@@ -5791,7 +5791,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:51:51.459Z",
+                      "startTime": "2026-10-19T01:55:00.727Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5836,7 +5836,7 @@
                       "workerIndex": 53,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10849,
+                      "duration": 10868,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/social.spec.ts:47:5",
@@ -5860,7 +5860,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:52:02.980Z",
+                      "startTime": "2026-10-19T01:55:12.311Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5905,7 +5905,7 @@
                       "workerIndex": 54,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10889,
+                      "duration": 10872,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/social.spec.ts:65:5",
@@ -5929,7 +5929,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:52:14.608Z",
+                      "startTime": "2026-10-19T01:55:23.948Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5974,7 +5974,7 @@
                       "workerIndex": 55,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10880,
+                      "duration": 10875,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/social.spec.ts:99:5",
@@ -5998,7 +5998,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:52:26.152Z",
+                      "startTime": "2026-10-19T01:55:35.531Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6043,7 +6043,7 @@
                       "workerIndex": 56,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10813,
+                      "duration": 10981,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/social.spec.ts:117:5",
@@ -6067,7 +6067,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:52:37.697Z",
+                      "startTime": "2026-10-19T01:55:47.107Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6112,7 +6112,7 @@
                       "workerIndex": 57,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10886,
+                      "duration": 11221,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/social.spec.ts:156:5",
@@ -6136,7 +6136,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:52:49.145Z",
+                      "startTime": "2026-10-19T01:55:58.822Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6198,12 +6198,12 @@
                       "workerIndex": 58,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1317,
+                      "duration": 1303,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:00.778Z",
+                      "startTime": "2026-10-19T01:56:10.746Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6232,7 +6232,7 @@
                       "workerIndex": 58,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11278,
+                      "duration": 11286,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:25:5",
@@ -6256,7 +6256,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:02.381Z",
+                      "startTime": "2026-10-19T01:56:12.365Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6301,7 +6301,7 @@
                       "workerIndex": 59,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6269,
+                      "duration": 6321,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4001/lo\u001b[7mg\u001b[27min\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4001/\u001b[7m?feed=fol\u001b[27mlo\u001b[7mw\u001b[27min\u001b[7mg\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4001/?feed=following\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4001/lo\u001b[7mg\u001b[27min\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4001/\u001b[7m?feed=fol\u001b[27mlo\u001b[7mw\u001b[27min\u001b[7mg\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4001/?feed=following\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:36:24",
@@ -6325,7 +6325,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:14.073Z",
+                      "startTime": "2026-10-19T01:56:24.038Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6370,10 +6370,10 @@
                       "workerIndex": 60,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6325,
+                      "duration": 6352,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"pag1792118845716\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"pag1792118845716\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"pag1792118845716\")')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"pag1792118845716\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"pag1792118845716\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"pag1792118845716\")')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:48:77",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"pag1792374635219\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"pag1792374635219\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"pag1792374635219\")')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"pag1792374635219\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"pag1792374635219\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"pag1792374635219\")')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:48:77",
                         "location": {
                           "file": "/Users/mantou/realworld/specs/e2e/url-navigation.spec.ts",
                           "column": 77,
@@ -6388,13 +6388,13 @@
                             "column": 77,
                             "line": 48
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"pag1792118845716\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"pag1792118845716\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"pag1792118845716\")')\u001b[22m\n\n\n  46 |     await page.goto(`/tag/${firstTag?.trim()}`);\n  47 |     // Should see the tag filter active\n> 48 |     await expect(page.locator(`.nav-link:has-text(\"${firstTag?.trim()}\")`)).toBeVisible();\n     |                                                                             ^\n  49 |     await expect(page.locator(`.nav-link:has-text(\"${firstTag?.trim()}\")`)).toHaveClass(/active/);\n  50 |   });\n  51 |\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:48:77"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"pag1792374635219\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"pag1792374635219\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"pag1792374635219\")')\u001b[22m\n\n\n  46 |     await page.goto(`/tag/${firstTag?.trim()}`);\n  47 |     // Should see the tag filter active\n> 48 |     await expect(page.locator(`.nav-link:has-text(\"${firstTag?.trim()}\")`)).toBeVisible();\n     |                                                                             ^\n  49 |     await expect(page.locator(`.nav-link:has-text(\"${firstTag?.trim()}\")`)).toHaveClass(/active/);\n  50 |   });\n  51 |\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:48:77"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:20.993Z",
+                      "startTime": "2026-10-19T01:56:31.057Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6439,7 +6439,7 @@
                       "workerIndex": 61,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11317,
+                      "duration": 11387,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:54:5",
@@ -6463,7 +6463,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:28.014Z",
+                      "startTime": "2026-10-19T01:56:38.090Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6508,7 +6508,7 @@
                       "workerIndex": 62,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11323,
+                      "duration": 11380,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:67:5",
@@ -6532,7 +6532,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:39.940Z",
+                      "startTime": "2026-10-19T01:56:50.158Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6577,7 +6577,7 @@
                       "workerIndex": 63,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11648,
+                      "duration": 11394,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:79:5",
@@ -6601,7 +6601,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:53:52.163Z",
+                      "startTime": "2026-10-19T01:57:02.225Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6646,7 +6646,7 @@
                       "workerIndex": 64,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11408,
+                      "duration": 11319,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:92:5",
@@ -6670,7 +6670,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:54:04.853Z",
+                      "startTime": "2026-10-19T01:57:14.266Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6723,7 +6723,7 @@
                       "workerIndex": 65,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 16070,
+                      "duration": 16061,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -6744,7 +6744,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:54:17.099Z",
+                      "startTime": "2026-10-19T01:57:26.202Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6784,7 +6784,7 @@
                       "workerIndex": 66,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 16069,
+                      "duration": 16039,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -6805,7 +6805,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:54:33.936Z",
+                      "startTime": "2026-10-19T01:57:43.045Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6845,7 +6845,7 @@
                       "workerIndex": 67,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11402,
+                      "duration": 11405,
                       "error": {
                         "message": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n",
                         "stack": "TimeoutError: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]')\u001b[22m\n\n    at register (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:11:51)\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:162:5",
@@ -6869,7 +6869,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:54:50.721Z",
+                      "startTime": "2026-10-19T01:57:59.849Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6914,7 +6914,7 @@
                       "workerIndex": 68,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 16065,
+                      "duration": 16066,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -6935,7 +6935,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:02.819Z",
+                      "startTime": "2026-10-19T01:58:12.057Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -6975,7 +6975,7 @@
                       "workerIndex": 69,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 16066,
+                      "duration": 16082,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -6996,7 +6996,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:19.560Z",
+                      "startTime": "2026-10-19T01:58:28.877Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -7036,7 +7036,7 @@
                       "workerIndex": 70,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 16080,
+                      "duration": 16095,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -7057,7 +7057,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:36.309Z",
+                      "startTime": "2026-10-19T01:58:45.670Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -7129,7 +7129,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.067Z",
+                      "startTime": "2026-10-19T01:59:02.518Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7183,7 +7183,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.084Z",
+                      "startTime": "2026-10-19T01:59:02.535Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7237,7 +7237,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.090Z",
+                      "startTime": "2026-10-19T01:59:02.541Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7291,7 +7291,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.094Z",
+                      "startTime": "2026-10-19T01:59:02.545Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7353,7 +7353,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.099Z",
+                      "startTime": "2026-10-19T01:59:02.549Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7407,7 +7407,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.103Z",
+                      "startTime": "2026-10-19T01:59:02.553Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7461,7 +7461,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.107Z",
+                      "startTime": "2026-10-19T01:59:02.558Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7515,7 +7515,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.114Z",
+                      "startTime": "2026-10-19T01:59:02.564Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7569,7 +7569,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.118Z",
+                      "startTime": "2026-10-19T01:59:02.568Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7623,7 +7623,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.123Z",
+                      "startTime": "2026-10-19T01:59:02.573Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7685,7 +7685,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.130Z",
+                      "startTime": "2026-10-19T01:59:02.579Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7739,7 +7739,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.133Z",
+                      "startTime": "2026-10-19T01:59:02.582Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7793,7 +7793,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.136Z",
+                      "startTime": "2026-10-19T01:59:02.586Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7847,7 +7847,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.140Z",
+                      "startTime": "2026-10-19T01:59:02.589Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -7905,7 +7905,7 @@
                       "workerIndex": 71,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15230,
+                      "duration": 15074,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -7926,7 +7926,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:55:53.155Z",
+                      "startTime": "2026-10-19T01:59:02.608Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -7968,7 +7968,7 @@
                       "workerIndex": 72,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15058,
+                      "duration": 15105,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -7989,7 +7989,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:56:09.086Z",
+                      "startTime": "2026-10-19T01:59:18.342Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8031,7 +8031,7 @@
                       "workerIndex": 73,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15045,
+                      "duration": 15103,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8052,7 +8052,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:56:24.978Z",
+                      "startTime": "2026-10-19T01:59:34.110Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8094,7 +8094,7 @@
                       "workerIndex": 74,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15053,
+                      "duration": 15076,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8115,7 +8115,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:56:40.715Z",
+                      "startTime": "2026-10-19T01:59:49.870Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8157,7 +8157,7 @@
                       "workerIndex": 75,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15084,
+                      "duration": 15077,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8178,7 +8178,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:56:56.444Z",
+                      "startTime": "2026-10-19T02:00:05.656Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8219,32 +8219,29 @@
                     {
                       "workerIndex": 76,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 5273,
+                      "status": "timedOut",
+                      "duration": 15092,
                       "error": {
-                        "message": "TimeoutError: apiRequestContext.post: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - → POST http://localhost:3100/api/users\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 110\u001b[22m\n",
-                        "stack": "TimeoutError: apiRequestContext.post: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - → POST http://localhost:3100/api/users\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 110\u001b[22m\n\n    at registerUserViaAPI (/Users/mantou/realworld/specs/e2e/helpers/api.ts:11:34)\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:168:43",
-                        "location": {
-                          "file": "/Users/mantou/realworld/specs/e2e/helpers/api.ts",
-                          "column": 34,
-                          "line": 11
-                        },
-                        "snippet": "   at helpers/api.ts:11\n\n   9 |\n  10 | export async function registerUserViaAPI(request: APIRequestContext, user: UserCredentials): Promise<string> {\n> 11 |   const response = await request.post(`${API_BASE}/users`, {\n     |                                  ^\n  12 |     data: {\n  13 |       user: {\n  14 |         username: user.username,"
+                        "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
+                          "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
+                        },
+                        {
                           "location": {
-                            "file": "/Users/mantou/realworld/specs/e2e/helpers/api.ts",
-                            "column": 34,
-                            "line": 11
+                            "file": "/Users/mantou/realworld/specs/e2e/helpers/auth.ts",
+                            "column": 29,
+                            "line": 32
                           },
-                          "message": "TimeoutError: apiRequestContext.post: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - → POST http://localhost:3100/api/users\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 110\u001b[22m\n\n\n   at helpers/api.ts:11\n\n   9 |\n  10 | export async function registerUserViaAPI(request: APIRequestContext, user: UserCredentials): Promise<string> {\n> 11 |   const response = await request.post(`${API_BASE}/users`, {\n     |                                  ^\n  12 |     data: {\n  13 |       user: {\n  14 |         username: user.username,\n    at registerUserViaAPI (/Users/mantou/realworld/specs/e2e/helpers/api.ts:11:34)\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:168:43"
+                          "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"/\" until \"load\"\n============================================================\n\n   at helpers/auth.ts:32\n\n  30 |   // Wait for navigation to complete or error to appear\n  31 |   try {\n> 32 |     await Promise.all([page.waitForURL('/'), page.click('button[type=\"submit\"]')]);\n     |                             ^\n  33 |   } catch (error) {\n  34 |     // If navigation fails, check for errors\n  35 |     const errorMsg = await page\n    at login (/Users/mantou/realworld/specs/e2e/helpers/auth.ts:32:29)\n    at authenticate (/Users/mantou/realworld/specs/e2e/xss-security.spec.ts:130:5)\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:172:5"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:57:12.269Z",
+                      "startTime": "2026-10-19T02:00:21.382Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8257,12 +8254,7 @@
                           "contentType": "text/markdown",
                           "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-16656-ous-payload-in-navbar-image-chromium/error-context.md"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/mantou/realworld/specs/e2e/helpers/api.ts",
-                        "column": 34,
-                        "line": 11
-                      }
+                      ]
                     }
                   ],
                   "status": "unexpected"
@@ -8291,7 +8283,7 @@
                       "workerIndex": 77,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15056,
+                      "duration": 15081,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8312,7 +8304,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:57:18.223Z",
+                      "startTime": "2026-10-19T02:00:37.181Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8362,7 +8354,7 @@
                       "workerIndex": 78,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15061,
+                      "duration": 15074,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8383,7 +8375,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:57:34.009Z",
+                      "startTime": "2026-10-19T02:00:52.988Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8425,7 +8417,7 @@
                       "workerIndex": 79,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15060,
+                      "duration": 15051,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8446,7 +8438,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:57:50.137Z",
+                      "startTime": "2026-10-19T02:01:08.878Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8488,7 +8480,7 @@
                       "workerIndex": 80,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15059,
+                      "duration": 15067,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8509,7 +8501,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:58:05.965Z",
+                      "startTime": "2026-10-19T02:01:24.689Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8580,7 +8572,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:58:21.736Z",
+                      "startTime": "2026-10-19T02:01:40.435Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8622,7 +8614,7 @@
                       "workerIndex": 82,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15053,
+                      "duration": 15081,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8643,7 +8635,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:58:37.453Z",
+                      "startTime": "2026-10-19T02:01:56.181Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8685,7 +8677,7 @@
                       "workerIndex": 83,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15075,
+                      "duration": 15080,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8706,7 +8698,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:58:53.166Z",
+                      "startTime": "2026-10-19T02:02:11.903Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8748,7 +8740,7 @@
                       "workerIndex": 84,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15070,
+                      "duration": 15059,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8769,7 +8761,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:59:08.961Z",
+                      "startTime": "2026-10-19T02:02:27.641Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8811,7 +8803,7 @@
                       "workerIndex": 85,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15052,
+                      "duration": 15075,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8832,7 +8824,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:59:24.759Z",
+                      "startTime": "2026-10-19T02:02:43.374Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8874,7 +8866,7 @@
                       "workerIndex": 86,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 15039,
+                      "duration": 15091,
                       "error": {
                         "message": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 15000ms exceeded.\u001b[39m"
@@ -8895,7 +8887,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T02:59:40.506Z",
+                      "startTime": "2026-10-19T02:02:59.127Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -8926,8 +8918,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-16T02:41:40.399Z",
-    "duration": 1095725.108,
+    "startTime": "2026-10-19T01:44:44.747Z",
+    "duration": 1109844.722,
     "expected": 6,
     "skipped": 46,
     "unexpected": 87,

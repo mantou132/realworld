@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-17T03:04:24.777Z",
+  "date": "2026-10-19T02:30:38.261Z",
   "machine": "Apple M2, 16 GB",
   "node": "v25.8.1",
   "runs": 5,
@@ -16,15 +16,15 @@
           "htmlGzip": 4816,
           "lighthouse": {
             "score": 100,
-            "fcp": 1214,
-            "lcp": 1669,
+            "fcp": 1220,
+            "lcp": 1673,
             "tbt": 0,
-            "si": 1214
+            "si": 1220
           },
           "load": {
-            "rps": 1313,
-            "p50": 14,
-            "p99": 26,
+            "rps": 936,
+            "p50": 18,
+            "p99": 99,
             "errors": 0
           }
         },
@@ -33,18 +33,18 @@
           "jsRaw": 104245,
           "jsGzip": 44290,
           "htmlRaw": 14706,
-          "htmlGzip": 4875,
+          "htmlGzip": 4880,
           "lighthouse": {
             "score": 100,
-            "fcp": 1287,
-            "lcp": 1667,
+            "fcp": 1295,
+            "lcp": 1673,
             "tbt": 0,
-            "si": 1287
+            "si": 1295
           },
           "load": {
-            "rps": 1103,
-            "p50": 17,
-            "p99": 42,
+            "rps": 1201,
+            "p50": 16,
+            "p99": 27,
             "errors": 0
           }
         },
@@ -53,17 +53,17 @@
           "jsRaw": 105023,
           "jsGzip": 45126,
           "htmlRaw": 13071,
-          "htmlGzip": 4261,
+          "htmlGzip": 4260,
           "lighthouse": {
             "score": 100,
-            "fcp": 1290,
-            "lcp": 1679,
+            "fcp": 1286,
+            "lcp": 1669,
             "tbt": 0,
-            "si": 1290
+            "si": 1286
           }
         }
       },
-      "navigation": 89
+      "navigation": 95
     },
     "next": {
       "sourceLines": 2712,
@@ -73,18 +73,18 @@
           "jsRaw": 356531,
           "jsGzip": 105944,
           "htmlRaw": 41639,
-          "htmlGzip": 5736,
+          "htmlGzip": 5743,
           "lighthouse": {
             "score": 96,
-            "fcp": 912,
-            "lcp": 2027,
-            "tbt": 9,
-            "si": 912
+            "fcp": 911,
+            "lcp": 2033,
+            "tbt": 12,
+            "si": 911
           },
           "load": {
-            "rps": 271,
-            "p50": 67,
-            "p99": 131,
+            "rps": 245,
+            "p50": 73,
+            "p99": 245,
             "errors": 0
           }
         },
@@ -93,18 +93,18 @@
           "jsRaw": 445304,
           "jsGzip": 129556,
           "htmlRaw": 33193,
-          "htmlGzip": 5837,
+          "htmlGzip": 5841,
           "lighthouse": {
-            "score": 96,
-            "fcp": 1665,
-            "lcp": 2565,
-            "tbt": 11,
-            "si": 1665
+            "score": 99,
+            "fcp": 914,
+            "lcp": 2028,
+            "tbt": 7,
+            "si": 914
           },
           "load": {
-            "rps": 236,
-            "p50": 76,
-            "p99": 198,
+            "rps": 304,
+            "p50": 62,
+            "p99": 112,
             "errors": 0
           }
         },
@@ -116,14 +116,14 @@
           "htmlGzip": 4877,
           "lighthouse": {
             "score": 94,
-            "fcp": 918,
-            "lcp": 2716,
-            "tbt": 14,
-            "si": 918
+            "fcp": 913,
+            "lcp": 2788,
+            "tbt": 13,
+            "si": 913
           }
         }
       },
-      "navigation": 94
+      "navigation": 105
     },
     "nuxt": {
       "sourceLines": 711,
@@ -133,18 +133,18 @@
           "jsRaw": 230916,
           "jsGzip": 87844,
           "htmlRaw": 14928,
-          "htmlGzip": 3063,
+          "htmlGzip": 3061,
           "lighthouse": {
             "score": 99,
-            "fcp": 1657,
-            "lcp": 1807,
+            "fcp": 1658,
+            "lcp": 1808,
             "tbt": 3,
-            "si": 1657
+            "si": 1658
           },
           "load": {
-            "rps": 887,
+            "rps": 895,
             "p50": 20,
-            "p99": 59,
+            "p99": 45,
             "errors": 0
           }
         },
@@ -153,7 +153,7 @@
           "jsRaw": 230597,
           "jsGzip": 87587,
           "htmlRaw": 12726,
-          "htmlGzip": 2938,
+          "htmlGzip": 2940,
           "lighthouse": {
             "score": 99,
             "fcp": 1656,
@@ -162,9 +162,9 @@
             "si": 1656
           },
           "load": {
-            "rps": 952,
+            "rps": 985,
             "p50": 19,
-            "p99": 42,
+            "p99": 39,
             "errors": 0
           }
         },
@@ -173,77 +173,77 @@
           "jsRaw": 230875,
           "jsGzip": 87809,
           "htmlRaw": 11741,
-          "htmlGzip": 2480,
+          "htmlGzip": 2481,
           "lighthouse": {
             "score": 99,
-            "fcp": 1656,
-            "lcp": 1806,
+            "fcp": 1657,
+            "lcp": 1809,
             "tbt": 0,
-            "si": 1656
+            "si": 1657
           }
         }
       },
-      "navigation": 104
+      "navigation": 106
     },
     "gemkit": {
       "sourceLines": 965,
       "pages": {
         "home": {
           "jsRequests": 2,
-          "jsRaw": 72400,
-          "jsGzip": 25876,
-          "htmlRaw": 21370,
-          "htmlGzip": 3107,
+          "jsRaw": 75301,
+          "jsGzip": 26902,
+          "htmlRaw": 21423,
+          "htmlGzip": 3112,
           "lighthouse": {
             "score": 100,
-            "fcp": 908,
-            "lcp": 1261,
+            "fcp": 907,
+            "lcp": 1424,
             "tbt": 0,
-            "si": 908
+            "si": 907
           },
           "load": {
-            "rps": 1250,
-            "p50": 15,
-            "p99": 31,
+            "rps": 1123,
+            "p50": 16,
+            "p99": 37,
             "errors": 0
           }
         },
         "article": {
           "jsRequests": 2,
-          "jsRaw": 72596,
-          "jsGzip": 25865,
-          "htmlRaw": 16221,
-          "htmlGzip": 3335,
+          "jsRaw": 75497,
+          "jsGzip": 26891,
+          "htmlRaw": 16274,
+          "htmlGzip": 3342,
           "lighthouse": {
             "score": 100,
-            "fcp": 905,
-            "lcp": 1552,
+            "fcp": 906,
+            "lcp": 1556,
             "tbt": 0,
-            "si": 905
+            "si": 906
           },
           "load": {
-            "rps": 1235,
-            "p50": 14,
-            "p99": 40,
+            "rps": 1065,
+            "p50": 16,
+            "p99": 46,
             "errors": 0
           }
         },
         "profile": {
           "jsRequests": 3,
-          "jsRaw": 73003,
-          "jsGzip": 26543,
-          "htmlRaw": 15470,
-          "htmlGzip": 2545,
+          "jsRaw": 75904,
+          "jsGzip": 27569,
+          "htmlRaw": 15523,
+          "htmlGzip": 2552,
           "lighthouse": {
             "score": 100,
-            "fcp": 905,
-            "lcp": 1550,
+            "fcp": 906,
+            "lcp": 1404,
             "tbt": 0,
-            "si": 905
+            "si": 906
           }
         }
       },
-      "navigation": 89
+      "navigation": 91
     }
   }
 }

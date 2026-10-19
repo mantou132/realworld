@@ -2,7 +2,7 @@
   "config": {
     "argv": [
       "/opt/homebrew/Cellar/node/25.8.1_1/bin/node",
-      "/Users/mantou/realworld/frameworks/bench/node_modules/.pnpm/@playwright+test@1.64.1/node_modules/@playwright/test/cli.js",
+      "/Users/mantou/realworld/frameworks/bench/node_modules/@playwright/test/cli.js",
       "test"
     ],
     "configFile": "/Users/mantou/realworld/frameworks/bench/playwright.config.ts",
@@ -137,12 +137,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2122,
+                      "duration": 1985,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:29:57.375Z",
+                      "startTime": "2026-10-19T02:03:17.232Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -171,12 +171,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1776,
+                      "duration": 1279,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:29:59.842Z",
+                      "startTime": "2026-10-19T02:03:19.639Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -205,7 +205,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11282,
+                      "duration": 11067,
                       "error": {
                         "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"/\" until \"load\"\n============================================================",
                         "stack": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"/\" until \"load\"\n============================================================\n    at deleteArticle (/Users/mantou/realworld/specs/e2e/helpers/articles.ts:60:27)\n    at /Users/mantou/realworld/specs/e2e/articles.spec.ts:77:24",
@@ -229,7 +229,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:01.626Z",
+                      "startTime": "2026-10-19T02:03:20.936Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -284,12 +284,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 1038,
+                      "duration": 1011,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:13.293Z",
+                      "startTime": "2026-10-19T02:03:32.388Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -328,12 +328,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1485,
+                      "duration": 1139,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:14.734Z",
+                      "startTime": "2026-10-19T02:03:33.695Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -362,12 +362,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1171,
+                      "duration": 1448,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:16.235Z",
+                      "startTime": "2026-10-19T02:03:34.855Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -396,12 +396,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1901,
+                      "duration": 1563,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:17.417Z",
+                      "startTime": "2026-10-19T02:03:36.324Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -430,12 +430,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1374,
+                      "duration": 1472,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:19.332Z",
+                      "startTime": "2026-10-19T02:03:37.904Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -464,12 +464,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1704,
+                      "duration": 1467,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:20.720Z",
+                      "startTime": "2026-10-19T02:03:39.392Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -498,12 +498,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1560,
+                      "duration": 1496,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:22.440Z",
+                      "startTime": "2026-10-19T02:03:40.876Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -549,12 +549,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 701,
+                      "duration": 640,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:24.016Z",
+                      "startTime": "2026-10-19T02:03:42.394Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -583,12 +583,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 792,
+                      "duration": 788,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:24.726Z",
+                      "startTime": "2026-10-19T02:03:43.042Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -617,12 +617,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 302,
+                      "duration": 336,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:25.524Z",
+                      "startTime": "2026-10-19T02:03:43.834Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -651,12 +651,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 765,
+                      "duration": 746,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:25.832Z",
+                      "startTime": "2026-10-19T02:03:44.176Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -685,12 +685,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 527,
+                      "duration": 491,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:26.604Z",
+                      "startTime": "2026-10-19T02:03:44.933Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -719,12 +719,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 212,
+                      "duration": 197,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:27.137Z",
+                      "startTime": "2026-10-19T02:03:45.431Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -753,12 +753,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 434,
+                      "duration": 433,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:27.355Z",
+                      "startTime": "2026-10-19T02:03:45.634Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -797,12 +797,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 154,
+                      "duration": 150,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:27.796Z",
+                      "startTime": "2026-10-19T02:03:46.073Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -858,12 +858,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1085,
+                      "duration": 1088,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:27.962Z",
+                      "startTime": "2026-10-19T02:03:46.234Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -892,7 +892,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6097,
+                      "duration": 6190,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment to be deleted\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment to be deleted\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n\n    at deleteComment (/Users/mantou/realworld/specs/e2e/helpers/comments.ts:24:63)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:44:24",
@@ -916,7 +916,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:29.058Z",
+                      "startTime": "2026-10-19T02:03:47.332Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -971,12 +971,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 1095,
+                      "duration": 1173,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:35.508Z",
+                      "startTime": "2026-10-19T02:03:53.877Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1015,12 +1015,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1218,
+                      "duration": 1237,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:36.972Z",
+                      "startTime": "2026-10-19T02:03:55.485Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1049,7 +1049,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6211,
+                      "duration": 6277,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('textarea[placeholder=\"Write a comment...\"]')\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" locator('textarea[placeholder=\"Write a comment...\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[placeholder=\"Write a comment...\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <textarea rows=\"3\" name=\"body\" class=\"form-control\" placeholder=\"Write a comment...\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('textarea[placeholder=\"Write a comment...\"]')\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" locator('textarea[placeholder=\"Write a comment...\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[placeholder=\"Write a comment...\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <textarea rows=\"3\" name=\"body\" class=\"form-control\" placeholder=\"Write a comment...\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:112:83",
@@ -1073,7 +1073,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:38.208Z",
+                      "startTime": "2026-10-19T02:03:56.743Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1123,10 +1123,10 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6608,
+                      "duration": 6644,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:138:72",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:138:72",
                         "location": {
                           "file": "/Users/mantou/realworld/specs/e2e/comments.spec.ts",
                           "column": 72,
@@ -1141,13 +1141,13 @@
                             "column": 72,
                             "line": 138
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792121446052\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n\n\n  136 |     // Verify the delete button IS visible for OUR comment\n  137 |     const ownComment = page.locator('.card', { has: page.locator(`text=\"${commentText}\"`) });\n> 138 |     await expect(ownComment.locator('span.mod-options i.ion-trash-a')).toBeVisible();\n      |                                                                        ^\n  139 |   });\n  140 |\n  141 |   test('should handle long comments', async ({ page }) => {\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:138:72"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ has: locator('text=\"Comment by logged in user 1792375444701\"') }).locator('span.mod-options i.ion-trash-a')\u001b[22m\n\n\n  136 |     // Verify the delete button IS visible for OUR comment\n  137 |     const ownComment = page.locator('.card', { has: page.locator(`text=\"${commentText}\"`) });\n> 138 |     await expect(ownComment.locator('span.mod-options i.ion-trash-a')).toBeVisible();\n      |                                                                        ^\n  139 |   });\n  140 |\n  141 |   test('should handle long comments', async ({ page }) => {\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:138:72"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:44.792Z",
+                      "startTime": "2026-10-19T02:04:03.417Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1192,7 +1192,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6505,
+                      "duration": 6525,
                       "error": {
                         "message": "TimeoutError: page.waitForFunction: Timeout 5000ms exceeded.",
                         "stack": "TimeoutError: page.waitForFunction: Timeout 5000ms exceeded.\n    at addComment (/Users/mantou/realworld/specs/e2e/helpers/comments.ts:14:14)\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:143:5",
@@ -1216,7 +1216,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:52.051Z",
+                      "startTime": "2026-10-19T02:04:10.705Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1261,12 +1261,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1657,
+                      "duration": 1636,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:30:59.193Z",
+                      "startTime": "2026-10-19T02:04:17.980Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1295,7 +1295,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6135,
+                      "duration": 6179,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('textarea[placeholder=\"Write a comment...\"]')\nExpected: \u001b[32m\"\"\u001b[39m\nReceived: \u001b[31m\"Test comment\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" locator('textarea[placeholder=\"Write a comment...\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[placeholder=\"Write a comment...\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <textarea rows=\"3\" name=\"body\" class=\"form-control\" placeholder=\"Write a comment...\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"Test comment\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('textarea[placeholder=\"Write a comment...\"]')\nExpected: \u001b[32m\"\"\u001b[39m\nReceived: \u001b[31m\"Test comment\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" locator('textarea[placeholder=\"Write a comment...\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[placeholder=\"Write a comment...\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <textarea rows=\"3\" name=\"body\" class=\"form-control\" placeholder=\"Write a comment...\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"Test comment\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/comments.spec.ts:161:78",
@@ -1319,7 +1319,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:01.129Z",
+                      "startTime": "2026-10-19T02:04:20.084Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1391,12 +1391,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 1,
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.662Z",
+                      "startTime": "2026-10-19T02:04:26.640Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1450,7 +1450,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.682Z",
+                      "startTime": "2026-10-19T02:04:26.657Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1504,7 +1504,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.687Z",
+                      "startTime": "2026-10-19T02:04:26.663Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1566,7 +1566,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.692Z",
+                      "startTime": "2026-10-19T02:04:26.667Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1620,7 +1620,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.697Z",
+                      "startTime": "2026-10-19T02:04:26.671Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1682,7 +1682,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.702Z",
+                      "startTime": "2026-10-19T02:04:26.676Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1736,7 +1736,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.709Z",
+                      "startTime": "2026-10-19T02:04:26.682Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1790,7 +1790,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.713Z",
+                      "startTime": "2026-10-19T02:04:26.686Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1852,7 +1852,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.718Z",
+                      "startTime": "2026-10-19T02:04:26.690Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1906,7 +1906,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.725Z",
+                      "startTime": "2026-10-19T02:04:26.697Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -1960,7 +1960,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.729Z",
+                      "startTime": "2026-10-19T02:04:26.701Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2014,7 +2014,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.733Z",
+                      "startTime": "2026-10-19T02:04:26.705Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2068,7 +2068,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.737Z",
+                      "startTime": "2026-10-19T02:04:26.708Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2122,7 +2122,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.747Z",
+                      "startTime": "2026-10-19T02:04:26.722Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2176,7 +2176,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.753Z",
+                      "startTime": "2026-10-19T02:04:26.726Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2230,7 +2230,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.761Z",
+                      "startTime": "2026-10-19T02:04:26.729Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2284,7 +2284,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.764Z",
+                      "startTime": "2026-10-19T02:04:26.733Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2346,7 +2346,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.768Z",
+                      "startTime": "2026-10-19T02:04:26.736Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2400,7 +2400,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.772Z",
+                      "startTime": "2026-10-19T02:04:26.740Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2454,7 +2454,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.776Z",
+                      "startTime": "2026-10-19T02:04:26.743Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2508,7 +2508,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.780Z",
+                      "startTime": "2026-10-19T02:04:26.747Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2562,7 +2562,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.784Z",
+                      "startTime": "2026-10-19T02:04:26.751Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2616,7 +2616,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.789Z",
+                      "startTime": "2026-10-19T02:04:26.758Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2670,7 +2670,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.793Z",
+                      "startTime": "2026-10-19T02:04:26.763Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2724,7 +2724,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.801Z",
+                      "startTime": "2026-10-19T02:04:26.767Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2778,7 +2778,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.805Z",
+                      "startTime": "2026-10-19T02:04:26.771Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2832,7 +2832,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.810Z",
+                      "startTime": "2026-10-19T02:04:26.775Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2894,7 +2894,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.814Z",
+                      "startTime": "2026-10-19T02:04:26.779Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -2948,7 +2948,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.819Z",
+                      "startTime": "2026-10-19T02:04:26.791Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3002,7 +3002,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.823Z",
+                      "startTime": "2026-10-19T02:04:26.795Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3056,7 +3056,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.833Z",
+                      "startTime": "2026-10-19T02:04:26.798Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -3112,12 +3112,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 409,
+                      "duration": 323,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:07.839Z",
+                      "startTime": "2026-10-19T02:04:26.805Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3146,12 +3146,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1294,
+                      "duration": 2000,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:08.567Z",
+                      "startTime": "2026-10-19T02:04:27.425Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3180,12 +3180,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 200,
+                      "duration": 301,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:09.870Z",
+                      "startTime": "2026-10-19T02:04:29.441Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3214,12 +3214,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 198,
+                      "duration": 272,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:10.077Z",
+                      "startTime": "2026-10-19T02:04:29.752Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3265,12 +3265,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1384,
+                      "duration": 1480,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:10.289Z",
+                      "startTime": "2026-10-19T02:04:30.046Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3299,12 +3299,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1550,
+                      "duration": 1672,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:11.683Z",
+                      "startTime": "2026-10-19T02:04:31.538Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3333,12 +3333,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1622,
+                      "duration": 1976,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:13.248Z",
+                      "startTime": "2026-10-19T02:04:33.231Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3367,12 +3367,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2443,
+                      "duration": 1957,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:14.884Z",
+                      "startTime": "2026-10-19T02:04:35.225Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3401,7 +3401,7 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6561,
+                      "duration": 6608,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.sidebar .tag-list .tag-pill:has-text(\"popular\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.sidebar .tag-list .tag-pill:has-text(\"popular\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.sidebar .tag-list .tag-pill:has-text(\"popular\")')\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.sidebar .tag-list .tag-pill:has-text(\"popular\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.sidebar .tag-list .tag-pill:has-text(\"popular\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.sidebar .tag-list .tag-pill:has-text(\"popular\")')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:156:84",
@@ -3425,7 +3425,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:17.341Z",
+                      "startTime": "2026-10-19T02:04:37.199Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3470,7 +3470,7 @@
                       "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5942,
+                      "duration": 6137,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/navigation.spec.ts:175:16",
@@ -3494,7 +3494,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:24.289Z",
+                      "startTime": "2026-10-19T02:04:44.245Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3539,12 +3539,12 @@
                       "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2005,
+                      "duration": 2038,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:30.828Z",
+                      "startTime": "2026-10-19T02:04:51.153Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3573,12 +3573,12 @@
                       "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2872,
+                      "duration": 2959,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:33.116Z",
+                      "startTime": "2026-10-19T02:04:53.590Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3607,12 +3607,12 @@
                       "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1456,
+                      "duration": 1470,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:36.020Z",
+                      "startTime": "2026-10-19T02:04:56.572Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3658,7 +3658,7 @@
                       "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5506,
+                      "duration": 5631,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-img') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-img') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:26:16",
@@ -3682,7 +3682,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:37.499Z",
+                      "startTime": "2026-10-19T02:04:58.081Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3727,7 +3727,7 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5559,
+                      "duration": 5597,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('nav .user-pic')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('nav .user-pic') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('nav .user-pic')\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('nav .user-pic')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('nav .user-pic') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('nav .user-pic')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:37:26",
@@ -3751,7 +3751,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:43.329Z",
+                      "startTime": "2026-10-19T02:05:04.066Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3796,7 +3796,7 @@
                       "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5750,
+                      "duration": 5731,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-meta img').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.article-meta img').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-meta img').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-meta img').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.article-meta img').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-meta img').first()\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:48:34",
@@ -3820,7 +3820,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:49.461Z",
+                      "startTime": "2026-10-19T02:05:10.393Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3865,7 +3865,7 @@
                       "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5819,
+                      "duration": 5821,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.comment-form .comment-author-img')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.comment-form .comment-author-img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.comment-form .comment-author-img')\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.comment-form .comment-author-img')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.comment-form .comment-author-img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.comment-form .comment-author-img')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:61:34",
@@ -3889,7 +3889,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:31:55.784Z",
+                      "startTime": "2026-10-19T02:05:16.727Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3934,12 +3934,12 @@
                       "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1377,
+                      "duration": 1791,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:02.301Z",
+                      "startTime": "2026-10-19T02:05:23.176Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3968,7 +3968,7 @@
                       "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5703,
+                      "duration": 5636,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-img') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-img') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:101:16",
@@ -3992,7 +3992,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:03.992Z",
+                      "startTime": "2026-10-19T02:05:25.230Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4037,7 +4037,7 @@
                       "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5647,
+                      "duration": 5672,
                       "error": {
                         "message": "TimeoutError: locator.textContent: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-info p')\u001b[22m\n",
                         "stack": "TimeoutError: locator.textContent: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-info p')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:112:56",
@@ -4061,7 +4061,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:10.024Z",
+                      "startTime": "2026-10-19T02:05:31.189Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4106,7 +4106,7 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6812,
+                      "duration": 6761,
                       "error": {
                         "message": "TimeoutError: locator.textContent: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-info p')\u001b[22m\n",
                         "stack": "TimeoutError: locator.textContent: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.user-info p')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:134:56",
@@ -4130,7 +4130,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:16.262Z",
+                      "startTime": "2026-10-19T02:05:37.466Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4175,12 +4175,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 600,
+                      "duration": 603,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:23.808Z",
+                      "startTime": "2026-10-19T02:05:44.818Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4209,12 +4209,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 514,
+                      "duration": 575,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:24.659Z",
+                      "startTime": "2026-10-19T02:05:45.691Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4243,7 +4243,7 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6424,
+                      "duration": 6456,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.article-preview').first().locator('.article-meta img')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.article-preview').first().locator('.article-meta img') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.article-preview').first().locator('.article-meta img')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/null-fields.spec.ts:168:25",
@@ -4267,7 +4267,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:25.179Z",
+                      "startTime": "2026-10-19T02:05:46.273Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4329,12 +4329,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1334,
+                      "duration": 1854,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:31.930Z",
+                      "startTime": "2026-10-19T02:05:53.069Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4363,12 +4363,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1719,
+                      "duration": 1761,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:33.531Z",
+                      "startTime": "2026-10-19T02:05:55.180Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4397,12 +4397,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1752,
+                      "duration": 1756,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:35.263Z",
+                      "startTime": "2026-10-19T02:05:56.961Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4431,12 +4431,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1782,
+                      "duration": 1736,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:37.030Z",
+                      "startTime": "2026-10-19T02:05:58.736Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4465,12 +4465,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1785,
+                      "duration": 1370,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:38.824Z",
+                      "startTime": "2026-10-19T02:06:00.487Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4499,12 +4499,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1771,
+                      "duration": 1757,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:40.622Z",
+                      "startTime": "2026-10-19T02:06:01.873Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4533,12 +4533,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2595,
+                      "duration": 2583,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:42.407Z",
+                      "startTime": "2026-10-19T02:06:03.651Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4584,12 +4584,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1073,
+                      "duration": 1033,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:45.035Z",
+                      "startTime": "2026-10-19T02:06:06.269Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4618,12 +4618,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 959,
+                      "duration": 944,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:46.120Z",
+                      "startTime": "2026-10-19T02:06:07.319Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4652,12 +4652,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1292,
+                      "duration": 1285,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:47.091Z",
+                      "startTime": "2026-10-19T02:06:08.286Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4686,12 +4686,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1409,
+                      "duration": 1456,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:48.397Z",
+                      "startTime": "2026-10-19T02:06:09.597Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4720,12 +4720,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2213,
+                      "duration": 2110,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:49.820Z",
+                      "startTime": "2026-10-19T02:06:11.070Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4754,12 +4754,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1054,
+                      "duration": 1085,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:52.044Z",
+                      "startTime": "2026-10-19T02:06:13.197Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4805,12 +4805,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1472,
+                      "duration": 1509,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:53.113Z",
+                      "startTime": "2026-10-19T02:06:14.309Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4839,7 +4839,7 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6491,
+                      "duration": 6452,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveClass\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"Your Feed\")')\nExpected pattern: \u001b[32m/active/\u001b[39m\nReceived string:  \u001b[31m\"nav-link\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveClass\" locator('.nav-link:has-text(\"Your Feed\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"Your Feed\")')\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"nav-link\" href=\"/?tab=yours\">Your Feed</a>\u001b[22m\n\u001b[2m       - unexpected value \"nav-link\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveClass\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"Your Feed\")')\nExpected pattern: \u001b[32m/active/\u001b[39m\nReceived string:  \u001b[31m\"nav-link\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveClass\" locator('.nav-link:has-text(\"Your Feed\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"Your Feed\")')\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"nav-link\" href=\"/?tab=yours\">Your Feed</a>\u001b[22m\n\u001b[2m       - unexpected value \"nav-link\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:28:67",
@@ -4863,7 +4863,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:32:54.596Z",
+                      "startTime": "2026-10-19T02:06:15.834Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4908,7 +4908,7 @@
                       "workerIndex": 17,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6311,
+                      "duration": 6302,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/lo\u001b[7mg\u001b[27min\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/\u001b[7m?feed=fol\u001b[27mlo\u001b[7mw\u001b[27min\u001b[7mg\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?feed=following\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/lo\u001b[7mg\u001b[27min\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/\u001b[7m?feed=fol\u001b[27mlo\u001b[7mw\u001b[27min\u001b[7mg\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?feed=following\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:36:24",
@@ -4932,7 +4932,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:01.482Z",
+                      "startTime": "2026-10-19T02:06:22.658Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4977,7 +4977,7 @@
                       "workerIndex": 18,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6664,
+                      "duration": 6656,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"test\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"test\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"test\")')\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"test\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.nav-link:has-text(\"test\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"test\")')\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:48:77",
@@ -5001,7 +5001,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:08.525Z",
+                      "startTime": "2026-10-19T02:06:29.672Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5046,7 +5046,7 @@
                       "workerIndex": 19,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6665,
+                      "duration": 6539,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.nav-link:has-text(\"Your Feed\")')\nExpected: \u001b[32m\"/?\u001b[7mfeed=following\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"/?\u001b[7mtab=yours\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.nav-link:has-text(\"Your Feed\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"Your Feed\")')\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"nav-link\" href=\"/?tab=yours\">Your Feed</a>\u001b[22m\n\u001b[2m       - unexpected value \"/?tab=yours\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.nav-link:has-text(\"Your Feed\")')\nExpected: \u001b[32m\"/?\u001b[7mfeed=following\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"/?\u001b[7mtab=yours\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.nav-link:has-text(\"Your Feed\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"Your Feed\")')\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"nav-link\" href=\"/?tab=yours\">Your Feed</a>\u001b[22m\n\u001b[2m       - unexpected value \"/?tab=yours\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:59:32",
@@ -5070,7 +5070,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:15.813Z",
+                      "startTime": "2026-10-19T02:06:36.923Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5115,7 +5115,7 @@
                       "workerIndex": 20,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6506,
+                      "duration": 6622,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/?\u001b[7mfeed=following\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/?\u001b[7mtab=yours\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m    - unexpected value \"http://localhost:4002/\"\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?tab=yours\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/?\u001b[7mfeed=following\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/?\u001b[7mtab=yours\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m    - unexpected value \"http://localhost:4002/\"\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?tab=yours\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:73:24",
@@ -5139,7 +5139,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:23.121Z",
+                      "startTime": "2026-10-19T02:06:44.084Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5184,7 +5184,7 @@
                       "workerIndex": 21,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6607,
+                      "duration": 6574,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveClass\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"Your Feed\")')\nExpected pattern: \u001b[32m/active/\u001b[39m\nReceived string:  \u001b[31m\"nav-link\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveClass\" locator('.nav-link:has-text(\"Your Feed\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"Your Feed\")')\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"nav-link\" href=\"/?tab=yours\">Your Feed</a>\u001b[22m\n\u001b[2m       - unexpected value \"nav-link\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveClass\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.nav-link:has-text(\"Your Feed\")')\nExpected pattern: \u001b[32m/active/\u001b[39m\nReceived string:  \u001b[31m\"nav-link\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveClass\" locator('.nav-link:has-text(\"Your Feed\")') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.nav-link:has-text(\"Your Feed\")')\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"nav-link\" href=\"/?tab=yours\">Your Feed</a>\u001b[22m\n\u001b[2m       - unexpected value \"nav-link\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:82:67",
@@ -5208,7 +5208,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:30.213Z",
+                      "startTime": "2026-10-19T02:06:51.320Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5253,7 +5253,7 @@
                       "workerIndex": 22,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3621,
+                      "duration": 3620,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.empty-feed-message') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.empty-feed-message') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:95:16",
@@ -5277,7 +5277,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:37.491Z",
+                      "startTime": "2026-10-19T02:06:58.541Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5330,7 +5330,7 @@
                       "workerIndex": 23,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5334,
+                      "duration": 5463,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:126:16",
@@ -5354,7 +5354,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:41.781Z",
+                      "startTime": "2026-10-19T02:07:03.145Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5399,7 +5399,7 @@
                       "workerIndex": 24,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5325,
+                      "duration": 5417,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:152:16",
@@ -5423,7 +5423,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:47.725Z",
+                      "startTime": "2026-10-19T02:07:09.306Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5454,7 +5454,7 @@
             },
             {
               "title": "pagination URL preserves feed=following parameter",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -5467,53 +5467,18 @@
                     {
                       "workerIndex": 25,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 6702,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/?\u001b[7mfeed=following\u001b[27m&page=2\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/?\u001b[7mtab=global\u001b[27m&page=2\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?tab=global&page=2\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/?\u001b[7mfeed=following\u001b[27m&page=2\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/?\u001b[7mtab=global\u001b[27m&page=2\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?tab=global&page=2\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:175:26",
-                        "location": {
-                          "file": "/Users/mantou/realworld/specs/e2e/url-navigation.spec.ts",
-                          "column": 26,
-                          "line": 175
-                        },
-                        "snippet": "  173 |       await page.click('.pagination .page-link:has-text(\"2\")');\n  174 |       // URL should preserve feed param and add page\n> 175 |       await expect(page).toHaveURL('/?feed=following&page=2');\n      |                          ^\n  176 |     } else {\n  177 |       // No pagination available - just verify URL structure is correct\n  178 |       await expect(page).toHaveURL('/?feed=following');"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/mantou/realworld/specs/e2e/url-navigation.spec.ts",
-                            "column": 26,
-                            "line": 175
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:4002/?\u001b[7mfeed=following\u001b[27m&page=2\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:4002/?\u001b[7mtab=global\u001b[27m&page=2\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:4002/?tab=global&page=2\"\u001b[22m\n\n\n  173 |       await page.click('.pagination .page-link:has-text(\"2\")');\n  174 |       // URL should preserve feed param and add page\n> 175 |       await expect(page).toHaveURL('/?feed=following&page=2');\n      |                          ^\n  176 |     } else {\n  177 |       // No pagination available - just verify URL structure is correct\n  178 |       await expect(page).toHaveURL('/?feed=following');\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:175:26"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 1569,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:33:53.685Z",
+                      "startTime": "2026-10-19T02:07:15.324Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/url-navigation-Pagination--b7bfe-es-feed-following-parameter-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/url-navigation-Pagination--b7bfe-es-feed-following-parameter-chromium/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/mantou/realworld/specs/e2e/url-navigation.spec.ts",
-                        "column": 26,
-                        "line": 175
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "77baf8bf63c77236633e-d5fab38a353773ddae84",
@@ -5534,10 +5499,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 26,
+                      "workerIndex": 25,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5450,
+                      "duration": 5214,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:197:16",
@@ -5561,7 +5526,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:01.169Z",
+                      "startTime": "2026-10-19T02:07:17.161Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5603,10 +5568,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 27,
+                      "workerIndex": 26,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5310,
+                      "duration": 5403,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:221:16",
@@ -5630,7 +5595,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:07.293Z",
+                      "startTime": "2026-10-19T02:07:22.820Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5672,10 +5637,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 28,
+                      "workerIndex": 27,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5398,
+                      "duration": 5357,
                       "error": {
                         "message": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n",
                         "stack": "TimeoutError: page.waitForSelector: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.article-preview') to be visible\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/url-navigation.spec.ts:249:16",
@@ -5699,7 +5664,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:13.207Z",
+                      "startTime": "2026-10-19T02:07:28.845Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5768,15 +5733,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 1,
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.214Z",
+                      "startTime": "2026-10-19T02:07:34.820Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -5822,7 +5787,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -5830,7 +5795,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.231Z",
+                      "startTime": "2026-10-19T02:07:34.837Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -5876,7 +5841,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -5884,7 +5849,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.238Z",
+                      "startTime": "2026-10-19T02:07:34.842Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -5930,7 +5895,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -5938,7 +5903,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.242Z",
+                      "startTime": "2026-10-19T02:07:34.846Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -5992,7 +5957,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6000,7 +5965,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.247Z",
+                      "startTime": "2026-10-19T02:07:34.850Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6046,7 +6011,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6054,7 +6019,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.252Z",
+                      "startTime": "2026-10-19T02:07:34.855Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6100,7 +6065,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6108,7 +6073,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.256Z",
+                      "startTime": "2026-10-19T02:07:34.860Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6154,7 +6119,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6162,7 +6127,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.263Z",
+                      "startTime": "2026-10-19T02:07:34.866Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6208,7 +6173,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6216,7 +6181,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.267Z",
+                      "startTime": "2026-10-19T02:07:34.870Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6262,7 +6227,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6270,7 +6235,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.272Z",
+                      "startTime": "2026-10-19T02:07:34.875Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6324,7 +6289,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6332,7 +6297,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.280Z",
+                      "startTime": "2026-10-19T02:07:34.881Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6378,7 +6343,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6386,7 +6351,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.283Z",
+                      "startTime": "2026-10-19T02:07:34.885Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6432,7 +6397,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6440,7 +6405,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.287Z",
+                      "startTime": "2026-10-19T02:07:34.888Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6486,7 +6451,7 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
                       "status": "skipped",
                       "duration": 0,
@@ -6494,7 +6459,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.291Z",
+                      "startTime": "2026-10-19T02:07:34.891Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -6536,7 +6501,7 @@
           "specs": [
             {
               "title": "should prevent XSS via onerror attribute injection",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "security"
               ],
@@ -6549,20 +6514,55 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 28,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2841,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 10625,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375655340\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375655340\", waiting until \"load\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:145:18",
+                        "location": {
+                          "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                          "column": 18,
+                          "line": 145
+                        },
+                        "snippet": "  143 |       // Now visit the profile page as a \"victim\" viewing this profile\n  144 |       await authenticate(page, token, user);\n> 145 |       await page.goto(`/profile/${user.username}`);\n      |                  ^\n  146 |       await expect(page).toHaveURL(new RegExp(`/profile/${user.username}`));\n  147 |       // Wait for profile to load (user-info section contains the image)\n  148 |       await page.waitForSelector('.user-info', { timeout: 10000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                            "column": 18,
+                            "line": 145
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375655340\", waiting until \"load\"\u001b[22m\n\n\n  143 |       // Now visit the profile page as a \"victim\" viewing this profile\n  144 |       await authenticate(page, token, user);\n> 145 |       await page.goto(`/profile/${user.username}`);\n      |                  ^\n  146 |       await expect(page).toHaveURL(new RegExp(`/profile/${user.username}`));\n  147 |       // Wait for profile to load (user-info section contains the image)\n  148 |       await page.waitForSelector('.user-info', { timeout: 10000 });\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:145:18"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:19.312Z",
+                      "startTime": "2026-10-19T02:07:34.905Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-b8573-onerror-attribute-injection-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-b8573-onerror-attribute-injection-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                        "column": 18,
+                        "line": 145
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "d17bcb3bc2a606e11073-e5a58bafc83678b63359",
@@ -6572,7 +6572,7 @@
             },
             {
               "title": "should prevent XSS via onerror with javascript protocol",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "security"
               ],
@@ -6587,18 +6587,53 @@
                     {
                       "workerIndex": 29,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2213,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 10612,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375666556\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375666556\", waiting until \"load\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:145:18",
+                        "location": {
+                          "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                          "column": 18,
+                          "line": 145
+                        },
+                        "snippet": "  143 |       // Now visit the profile page as a \"victim\" viewing this profile\n  144 |       await authenticate(page, token, user);\n> 145 |       await page.goto(`/profile/${user.username}`);\n      |                  ^\n  146 |       await expect(page).toHaveURL(new RegExp(`/profile/${user.username}`));\n  147 |       // Wait for profile to load (user-info section contains the image)\n  148 |       await page.waitForSelector('.user-info', { timeout: 10000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                            "column": 18,
+                            "line": 145
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375666556\", waiting until \"load\"\u001b[22m\n\n\n  143 |       // Now visit the profile page as a \"victim\" viewing this profile\n  144 |       await authenticate(page, token, user);\n> 145 |       await page.goto(`/profile/${user.username}`);\n      |                  ^\n  146 |       await expect(page).toHaveURL(new RegExp(`/profile/${user.username}`));\n  147 |       // Wait for profile to load (user-info section contains the image)\n  148 |       await page.waitForSelector('.user-info', { timeout: 10000 });\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:145:18"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:22.502Z",
+                      "startTime": "2026-10-19T02:07:46.158Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-e3175-or-with-javascript-protocol-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-e3175-or-with-javascript-protocol-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                        "column": 18,
+                        "line": 145
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "d17bcb3bc2a606e11073-47500462a0be30aeaa1b",
@@ -6608,7 +6643,7 @@
             },
             {
               "title": "should prevent XSS via onload attribute injection",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "security"
               ],
@@ -6621,20 +6656,55 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 30,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2350,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 10609,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375677762\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375677762\", waiting until \"load\"\u001b[22m\n\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:145:18",
+                        "location": {
+                          "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                          "column": 18,
+                          "line": 145
+                        },
+                        "snippet": "  143 |       // Now visit the profile page as a \"victim\" viewing this profile\n  144 |       await authenticate(page, token, user);\n> 145 |       await page.goto(`/profile/${user.username}`);\n      |                  ^\n  146 |       await expect(page).toHaveURL(new RegExp(`/profile/${user.username}`));\n  147 |       // Wait for profile to load (user-info section contains the image)\n  148 |       await page.waitForSelector('.user-info', { timeout: 10000 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                            "column": 18,
+                            "line": 145
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4002/profile/testuser1792375677762\", waiting until \"load\"\u001b[22m\n\n\n  143 |       // Now visit the profile page as a \"victim\" viewing this profile\n  144 |       await authenticate(page, token, user);\n> 145 |       await page.goto(`/profile/${user.username}`);\n      |                  ^\n  146 |       await expect(page).toHaveURL(new RegExp(`/profile/${user.username}`));\n  147 |       // Wait for profile to load (user-info section contains the image)\n  148 |       await page.waitForSelector('.user-info', { timeout: 10000 });\n    at /Users/mantou/realworld/specs/e2e/xss-security.spec.ts:145:18"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:24.726Z",
+                      "startTime": "2026-10-19T02:07:57.350Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-6384b--onload-attribute-injection-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/mantou/realworld/frameworks/bench/test-results/xss-security--security-XSS-6384b--onload-attribute-injection-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mantou/realworld/specs/e2e/xss-security.spec.ts",
+                        "column": 18,
+                        "line": 145
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "d17bcb3bc2a606e11073-5bc69b57e8ef4b4c295b",
@@ -6657,15 +6727,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2063,
+                      "duration": 2289,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:27.092Z",
+                      "startTime": "2026-10-19T02:08:08.555Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6693,15 +6763,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2044,
+                      "duration": 2006,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:29.164Z",
+                      "startTime": "2026-10-19T02:08:11.111Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6729,15 +6799,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4058,
+                      "duration": 4253,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:31.218Z",
+                      "startTime": "2026-10-19T02:08:13.127Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6765,15 +6835,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2375,
+                      "duration": 2512,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:35.285Z",
+                      "startTime": "2026-10-19T02:08:17.391Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6809,15 +6879,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2346,
+                      "duration": 2100,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:37.670Z",
+                      "startTime": "2026-10-19T02:08:19.914Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6845,15 +6915,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2091,
+                      "duration": 2103,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:40.036Z",
+                      "startTime": "2026-10-19T02:08:22.025Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6881,15 +6951,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2027,
+                      "duration": 2385,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:42.137Z",
+                      "startTime": "2026-10-19T02:08:24.141Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6925,15 +6995,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2032,
+                      "duration": 2077,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:44.173Z",
+                      "startTime": "2026-10-19T02:08:26.539Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6961,15 +7031,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2054,
+                      "duration": 2063,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:46.215Z",
+                      "startTime": "2026-10-19T02:08:28.627Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -6997,15 +7067,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1994,
+                      "duration": 2057,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:48.278Z",
+                      "startTime": "2026-10-19T02:08:30.700Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -7033,15 +7103,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2096,
+                      "duration": 2050,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:50.281Z",
+                      "startTime": "2026-10-19T02:08:32.767Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -7069,15 +7139,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2038,
+                      "duration": 2223,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:52.384Z",
+                      "startTime": "2026-10-19T02:08:34.825Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -7105,15 +7175,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 29,
+                      "workerIndex": 31,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2051,
+                      "duration": 2112,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-16T03:34:54.428Z",
+                      "startTime": "2026-10-19T02:08:37.058Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -7133,11 +7203,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-16T03:29:56.981Z",
-    "duration": 299566.50899999996,
-    "expected": 62,
+    "startTime": "2026-10-19T02:03:16.683Z",
+    "duration": 322567.311,
+    "expected": 60,
     "skipped": 48,
-    "unexpected": 29,
+    "unexpected": 31,
     "flaky": 0
   }
 }
