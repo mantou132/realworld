@@ -2,7 +2,7 @@ import { page } from '@mantou/gemkit';
 
 import type { ArticleListData } from '../../../lib/types';
 
-@page<{ username: string }>({ title: ({ username }) => `@${username}` })
+@page<{ username: string }>({ title: ({ params: { username } }) => `@${username}` })
 export default class ProfilePage extends GemElement {
   @property data: ArticleListData;
 

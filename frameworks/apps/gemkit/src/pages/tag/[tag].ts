@@ -2,7 +2,7 @@ import { page } from '@mantou/gemkit';
 
 import type { HomeData } from '../../lib/home.server';
 
-@page<{ tag: string }>({ title: ({ tag }) => `#${tag}` })
+@page<{ tag: string }>({ title: ({ params: { tag } }) => `#${tag}` })
 export default class TagPage extends GemElement {
   @property params: { tag: string };
   @property data: HomeData;

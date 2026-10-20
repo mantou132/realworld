@@ -5,7 +5,7 @@ import { avatar, type User } from '../lib/types';
 import { userStore } from '../stores';
 
 // 服务端数据中的当前用户写入 store，导航栏和页面从 store 读取
-@layout({ load: (_, data: { user: User | null }) => userStore({ user: data.user }) })
+@layout({ load: ({ data }: { data: { user: User | null } }) => userStore({ user: data.user }) })
 @connectStore(history.store)
 @connectStore(userStore)
 export default class RootLayout extends GemElement {

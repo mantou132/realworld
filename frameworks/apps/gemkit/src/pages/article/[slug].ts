@@ -18,7 +18,7 @@ const style = css`
   }
 `;
 
-@page<{ slug: string }, ArticleData>({ title: (_, data) => data.article.title })
+@page<{ slug: string }, ArticleData>({ title: ({ data }) => data.article.title })
 @adoptedStyle(style)
 @connectStore(userStore)
 export default class ArticlePage extends GemElement {
