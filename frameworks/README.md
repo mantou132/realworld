@@ -4,7 +4,7 @@
 
 | 应用 | 来源 | 版本 | 架构 |
 | --- | --- | --- | --- |
-| [gemkit](apps/gemkit) | 本仓库新写 | gemkit（[gem](https://github.com/mantou132/gem) `main` @ `a0fba746`，本地链接） | httpOnly cookie 登录，`*.server.ts` 中 `load` 和 form `actions`，`submitAction` 不刷新提交 |
+| [gemkit](apps/gemkit) | 本仓库新写 | gemkit（[gem](https://github.com/mantou132/gem) `main` @ `38c0320e`，本地链接） | httpOnly cookie 登录，`*.server.ts` 中 `load` 和 form `actions`，`submitAction` 不刷新提交 |
 | [sveltekit](apps/sveltekit) | [sveltejs/realworld](https://github.com/sveltejs/realworld) @ `df79670` | SvelteKit 2.52、Svelte 5 | httpOnly cookie 登录，`+page.server.js` 的 `load` 和 form actions |
 | [nuxt](apps/nuxt) | 本仓库新写（社区没有完整的 Nuxt 3/4 版本），结构参照 SvelteKit 版 | Nuxt 4.6 | `useCookie` 保存 token，页面直接请求 API，文章 markdown 走 Nitro server route |
 | [next](apps/next) | [yukicountry/realworld-nextjs-rsc](https://github.com/yukicountry/realworld-nextjs-rsc) @ `f455599` | Next.js 15.4、React 18 | App Router、React Server Components、Server Actions |
@@ -13,13 +13,13 @@
 
 ## 结果
 
-Apple M2, 16 GB, Node v25.8.1, 2026-10-19, Lighthouse median of 5 runs
+Apple M2, 16 GB, Node v25.8.1, 2026-10-22, Lighthouse median of 5 runs
 
 ### Client JS (gzip, KB)
 
 |  | Home | Article | Profile | JS requests (home) |
 | --- | ---: | ---: | ---: | ---: |
-| gemkit | 26.3 | 26.3 | 26.9 | 2 |
+| gemkit | 25.9 | 25.9 | 26.5 | 2 |
 | sveltekit | 44.0 | 43.3 | 44.1 | 23 |
 | nuxt | 85.8 | 85.5 | 85.8 | 15 |
 | next | 103.5 | 126.5 | 104.6 | 8 |
@@ -28,46 +28,46 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-19, Lighthouse median of 5 runs
 
 |  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| gemkit | 100 | 907 | 1424 | 0 | 907 | 3.0 |
-| sveltekit | 100 | 1220 | 1673 | 0 | 1220 | 4.7 |
-| nuxt | 99 | 1658 | 1808 | 3 | 1658 | 3.0 |
-| next | 96 | 911 | 2033 | 12 | 911 | 5.6 |
+| gemkit | 100 | 906 | 1361 | 0 | 906 | 3.1 |
+| sveltekit | 100 | 1285 | 1671 | 0 | 1285 | 4.7 |
+| nuxt | 99 | 1656 | 1806 | 0 | 1656 | 3.0 |
+| next | 96 | 908 | 2022 | 4 | 908 | 5.6 |
 
 ### Lighthouse: article (mobile, simulated throttling, behind a compressing proxy)
 
 |  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| gemkit | 100 | 906 | 1556 | 0 | 906 | 3.3 |
-| sveltekit | 100 | 1295 | 1673 | 0 | 1295 | 4.8 |
-| nuxt | 99 | 1656 | 1656 | 0 | 1656 | 2.9 |
-| next | 99 | 914 | 2028 | 7 | 914 | 5.7 |
+| gemkit | 100 | 905 | 1546 | 0 | 905 | 3.3 |
+| sveltekit | 100 | 1357 | 1664 | 0 | 1357 | 4.8 |
+| nuxt | 99 | 1655 | 1669 | 0 | 1655 | 2.9 |
+| next | 96 | 1659 | 2559 | 3 | 1659 | 5.7 |
 
 ### Lighthouse: profile (mobile, simulated throttling, behind a compressing proxy)
 
 |  | Score | FCP (ms) | LCP (ms) | TBT (ms) | Speed Index (ms) | HTML (gzip, KB) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| gemkit | 100 | 906 | 1404 | 0 | 906 | 2.5 |
-| sveltekit | 100 | 1286 | 1669 | 0 | 1286 | 4.2 |
-| nuxt | 99 | 1657 | 1809 | 0 | 1657 | 2.4 |
-| next | 94 | 913 | 2788 | 13 | 913 | 4.8 |
+| gemkit | 100 | 905 | 1698 | 0 | 905 | 2.5 |
+| sveltekit | 100 | 1282 | 1667 | 0 | 1282 | 4.2 |
+| nuxt | 99 | 1655 | 1805 | 0 | 1655 | 2.4 |
+| next | 94 | 1662 | 2712 | 5 | 1662 | 4.8 |
 
 ### SSR throughput (autocannon, 20 connections, 10 s, median of 5 rounds)
 
 |  | Home req/s | Home p50 / p99 (ms) | Article req/s | Article p50 / p99 (ms) |
 | --- | ---: | ---: | ---: | ---: |
-| gemkit | 1123 | 16 / 37 | 1065 | 16 / 46 |
-| sveltekit | 936 | 18 / 99 | 1201 | 16 / 27 |
-| nuxt | 895 | 20 / 45 | 985 | 19 / 39 |
-| next | 245 | 73 / 245 | 304 | 62 / 112 |
+| gemkit | 1382 | 13 / 25 | 1377 | 13 / 28 |
+| sveltekit | 1437 | 13 / 22 | 1388 | 13 / 22 |
+| nuxt | 1042 | 18 / 33 | 1169 | 16 / 29 |
+| next | 317 | 60 / 93 | 359 | 54 / 70 |
 
 ### Other
 
 |  | Client navigation home → article (ms) | Source lines | Official e2e passed |
 | --- | ---: | ---: | ---: |
-| gemkit | 91 | 965 | 87 / 91 |
-| sveltekit | 95 | 1143 | 6 / 93 |
-| nuxt | 106 | 711 | 86 / 91 |
-| next | 105 | 2712 | 60 / 91 |
+| gemkit | 53 | 968 | 84 / 91 |
+| sveltekit | 78 | 1143 | 6 / 93 |
+| nuxt | 95 | 711 | 86 / 91 |
+| next | 86 | 2712 | 60 / 91 |
 
 > SSR 吞吐受共享后端限制：首页每次渲染要请求 `/api/articles` 和 `/api/tags`，后端单独压测分别是 2053 和 6892 req/s。所以这里比较的是同一后端下各框架的相对开销，不是框架的极限。
 
@@ -79,13 +79,13 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-19, Lighthouse median of 5 runs
 
 ### 怎么读这些数据
 
-- **JS 体积**：gemkit 首页只有 2 个 JS 请求、26 kB（gzip），约为 SvelteKit 的 60%、Nuxt 的 31%、Next 的 25%。
-- **Lighthouse**：gemkit 和 SvelteKit 都是 100 分，TBT 都是 0。gemkit 的 FCP 约 0.9 s，比 SvelteKit 快 310–390 ms；LCP 快 120–270 ms（1.40–1.56 s）。之前直连测时 gemkit 的 LCP 比 SvelteKit 慢约 300 ms，原因是 gemkit 服务器不压缩：两个阻塞渲染的 CSS（ionicons 和主题）未压缩是 80 kB，SvelteKit 发的是预压缩的 11 kB。
-- **gemkit 的 LCP 不稳定**：在真实浏览器里，gemkit 页面的 LCP 元素（文章标题）就在 SSR 输出的 HTML 里，和 FCP 在同一帧绘制，水合也不会替换它。但 Lighthouse 的模拟算法（Lantern）会把真实绘制前已经下载完成的请求都算成 LCP 的依赖。本机加载很快，入口 JS 和异步 chunk 常常在首次绘制前就下载完，于是模拟的 LCP 在约 1.25 / 1.40 / 1.55 s 几档之间跳，`index.js` 多几百字节也会换档。对比 gem `161aa135` 和 `a0fba746` 两个版本，首页 LCP 从 1261 变成 1400–1550 ms，就是这个原因，不是渲染变慢了。
+- **JS 体积**：gemkit 首页只有 2 个 JS 请求、26 kB（gzip），约为 SvelteKit 的 59%、Nuxt 的 30%、Next 的 25%。
+- **Lighthouse**：gemkit 和 SvelteKit 都是 100 分，TBT 都是 0。gemkit 的 FCP 约 0.9 s，比 SvelteKit 快 380–450 ms；LCP 首页快约 310 ms（1.36 s）、文章页快约 120 ms（1.55 s），个人页这次慢约 30 ms（1.70 s，见下一条）。之前直连测时 gemkit 的 LCP 比 SvelteKit 慢约 300 ms，原因是 gemkit 服务器不压缩：两个阻塞渲染的 CSS（ionicons 和主题）未压缩是 80 kB，SvelteKit 发的是预压缩的 11 kB。
+- **gemkit 的 LCP 不稳定**：在真实浏览器里，gemkit 页面的 LCP 元素（文章标题）就在 SSR 输出的 HTML 里，和 FCP 在同一帧绘制，水合也不会替换它。但 Lighthouse 的模拟算法（Lantern）会把真实绘制前已经下载完成的请求都算成 LCP 的依赖。本机加载很快，入口 JS 和异步 chunk 常常在首次绘制前就下载完，于是模拟的 LCP 在约 1.25–1.70 s 之间分几档跳动，`index.js` 多几百字节也会换档。对比 gem `161aa135` 和 `a0fba746` 两个版本，首页 LCP 从 1261 变成 1400–1550 ms，就是这个原因，不是渲染变慢了。
 - **Nuxt 的 FCP 慢**：之前直连测时约 2.8 s，主要也是因为 Nuxt 服务器不压缩。统一压缩后是 1.66 s，仍比其他框架慢：Nuxt 默认把整个客户端模块图（15 个 JS、约 230 kB 未压缩）和阻塞渲染的 CSS 一起 modulepreload，在 Lighthouse 模拟的慢网络下 CSS 要和 JS 抢带宽。这是 Nuxt 的默认行为，不是配置错误。
-- **Next 的 FCP 快、LCP 慢**：RSC 流式输出让首屏很早出现（约 0.91 s），但客户端要下载 100–130 kB 的 JS，LCP 在 2.0–2.8 s。
-- **SSR 吞吐**：gemkit 和 SvelteKit 在波动范围内持平（首页 1123 / 936，文章页 1065 / 1201 req/s；同一应用 5 轮之间差得很多，SvelteKit 首页在 855–1385 之间，gemkit 首页在 750–1160 之间），比 Nuxt 高 8–25%，是 Next 的 3.5–4.6 倍。gemkit profiling 后修复了两处开销（见下面“框架问题”），首页从 661 提高到 1100–1250 req/s。压测时 gemkit 进程约 44% 的时间在等后端，gemkit 和 SvelteKit 都已经接近后端的上限。
-- **客户端导航**：首页点击文章到标题出现，取 15 次的中位数，四个框架都在 90–110 ms 之间，主要是一次数据请求的时间，差别不大。单次波动在 50–100 ms 之间。
+- **Next 的 FCP 快、LCP 慢**：RSC 流式输出让首页首屏很早出现（约 0.91 s），文章页和个人页这次约 1.66 s；客户端要下载 100–130 kB 的 JS，LCP 在 2.0–2.7 s。
+- **SSR 吞吐**：gemkit 和 SvelteKit 基本持平（首页 1382 / 1437，文章页 1377 / 1388 req/s，SvelteKit 略高 1–4%），比 Nuxt 高 18–33%，是 Next 的 3.8–4.4 倍。这次测量时机器比较空闲，各应用 5 轮之间相差在 15% 以内，比之前稳定，所以各框架的数值都比之前的结果高。gemkit profiling 后修复了两处开销（见下面“框架问题”），首页从 661 提高到约 1380 req/s。压测时 gemkit 进程约 44% 的时间在等后端，gemkit 和 SvelteKit 都已经接近后端的上限。
+- **客户端导航**：首页点击文章到标题出现，取 15 次的中位数。gemkit 53 ms，SvelteKit、Next、Nuxt 在 78–95 ms 之间，主要是一次数据请求的时间。单次波动在 50–100 ms 之间。
 - **源码行数**：不含共享主题 CSS、静态资源和生成的类型文件。Next 版多是因为它用了 container/presentation 分层和 zod schema。
 
 ### e2e
