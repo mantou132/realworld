@@ -18,7 +18,7 @@ export default class ProfileLayout extends GemElement {
       </a>`;
     }
     if (!user) return html`<a href="/login">Sign in to follow</a>`;
-    return html`<form method="post" action=${`/profile/${profile.username}?/toggleFollow`} @submit=${enhance()}>
+    return html`<form method="post" action="?/toggleFollow" @submit=${enhance()}>
       <input type="hidden" name="following" value=${profile.following ? 'on' : ''} />
       <button class=${classMap({
         btn: true,
