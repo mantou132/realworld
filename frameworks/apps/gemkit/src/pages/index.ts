@@ -1,5 +1,3 @@
-import { page } from '@mantou/gemkit';
-
 import type { HomeData } from '../lib/home.server';
 
 @page('Home')

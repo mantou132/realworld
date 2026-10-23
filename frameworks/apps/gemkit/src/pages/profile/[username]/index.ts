@@ -1,5 +1,3 @@
-import { page } from '@mantou/gemkit';
-
 import type { ArticleListData } from '../../../lib/types';
 
 @page<{ username: string }>({ title: ({ params: { username } }) => `@${username}` })

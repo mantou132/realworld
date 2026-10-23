@@ -1,5 +1,3 @@
-import { page } from '@mantou/gemkit';
-
 @page('Sign in')
 export default class LoginPage extends GemElement {
   @template()

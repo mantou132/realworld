@@ -1,4 +1,4 @@
-import { redirect, type ServerLoadContext } from '@mantou/gemkit';
+import type { ServerLoadContext } from '@mantou/gemkit';
 import { marked } from 'marked';
 import sanitizeHtml from 'sanitize-html';
 
