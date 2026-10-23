@@ -1,4 +1,4 @@
-import { notFound, redirect, type ServerLoadContext } from '@mantou/gemkit';
+import type { ServerLoadContext } from '@mantou/gemkit';
 
 import { type ArticleListData, PAGE_SIZE, type User } from './types';
 

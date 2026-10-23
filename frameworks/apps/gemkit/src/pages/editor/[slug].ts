@@ -1,5 +1,3 @@
-import { page } from '@mantou/gemkit';
-
 import type { Article } from '../../lib/types';
 
 @page('Editor')

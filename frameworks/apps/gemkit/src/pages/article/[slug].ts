@@ -1,5 +1,3 @@
-import { page } from '@mantou/gemkit';
-
 import { enhance } from '../../lib/form';
 import { type Article, avatar, type Comment, formatDate } from '../../lib/types';
 import { userStore } from '../../stores';

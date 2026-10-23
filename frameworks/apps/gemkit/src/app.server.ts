@@ -1,4 +1,4 @@
-import { type RequestEvent, redirect } from '@mantou/gemkit';
+import type { RequestEvent } from '@mantou/gemkit';
 
 import type { User } from './lib/types';
 

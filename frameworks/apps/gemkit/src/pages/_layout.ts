@@ -1,5 +1,4 @@
 import { history } from '@mantou/gem';
-import { layout } from '@mantou/gemkit';
 
 import { avatar, type User } from '../lib/types';
 import { userStore } from '../stores';
