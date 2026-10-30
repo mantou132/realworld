@@ -4,7 +4,7 @@
 
 | 应用 | 来源 | 版本 | 架构 |
 | --- | --- | --- | --- |
-| [gemkit](apps/gemkit) | 本仓库新写 | gemkit（[gem](https://github.com/mantou132/gem) `main` @ `38c0320e`，本地链接） | httpOnly cookie 登录，`*.server.ts` 中 `load` 和 form `actions`，`submitAction` 不刷新提交 |
+| [gemkit](apps/gemkit) | 本仓库新写 | gemkit（[gem](https://github.com/mantou132/gem) `main` @ `70c5aa3`，本地链接） | httpOnly cookie 登录，`*.server.ts` 中 `load` 和 form `actions`，`formActions` 不刷新提交（action 名称和结果有类型检查） |
 | [sveltekit](apps/sveltekit) | [sveltejs/realworld](https://github.com/sveltejs/realworld) @ `df79670` | SvelteKit 2.52、Svelte 5 | httpOnly cookie 登录，`+page.server.js` 的 `load` 和 form actions |
 | [nuxt](apps/nuxt) | 本仓库新写（社区没有完整的 Nuxt 3/4 版本），结构参照 SvelteKit 版 | Nuxt 4.6 | `useCookie` 保存 token，页面直接请求 API，文章 markdown 走 Nitro server route |
 | [next](apps/next) | [yukicountry/realworld-nextjs-rsc](https://github.com/yukicountry/realworld-nextjs-rsc) @ `f455599` | Next.js 15.4、React 18 | App Router、React Server Components、Server Actions |
@@ -14,6 +14,8 @@
 ## 结果
 
 Apple M2, 16 GB, Node v25.8.1, 2026-10-22, Lighthouse median of 5 runs
+
+> 以下数据是在 gem `38c0320e` 上测量的。之后 gemkit 修改了 `handle`（改为 `handle(event, resolve)`）、Node.js 服务器（静态文件索引、预压缩和实时压缩）和重新部署时的版本检查，gemkit 版也改用了 `formActions`，需要在 `70c5aa3` 上重新测量。
 
 ### Client JS (gzip, KB)
 
@@ -73,7 +75,7 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-22, Lighthouse median of 5 runs
 
 ### 测量方法
 
-- **Lighthouse、JS 体积、客户端导航**：经过 [`bench/proxy.mjs`](bench/proxy.mjs) 访问。这个代理模拟部署时的 CDN / 反向代理，向应用请求未压缩的内容，统一用 brotli（等级 5）压缩文本和未压缩的字体，每个 chunk 都 flush，不影响流式 SSR。各框架服务器默认的压缩行为不一样：Next 动态 gzip，SvelteKit（`adapter-node`）只给静态资源预压缩、HTML 不压缩，Nuxt 和 gemkit 都不压缩。实际部署时压缩通常由 CDN 或反向代理负责，所以这里统一交给代理，不比较各框架的默认值。
+- **Lighthouse、JS 体积、客户端导航**：经过 [`bench/proxy.mjs`](bench/proxy.mjs) 访问。这个代理模拟部署时的 CDN / 反向代理，向应用请求未压缩的内容，统一用 brotli（等级 5）压缩文本和未压缩的字体，每个 chunk 都 flush，不影响流式 SSR。各框架服务器默认的压缩行为不一样：Next 动态 gzip，SvelteKit（`adapter-node`）只给静态资源预压缩、HTML 不压缩，Nuxt 不压缩，gemkit（`gemkit start`）给静态资源和预渲染的页面预压缩、动态响应实时压缩（`--no-compress` 关闭）。实际部署时压缩通常由 CDN 或反向代理负责，所以这里统一交给代理，不比较各框架的默认值。
 - **SSR 吞吐**：直连应用，autocannon 不发送 `Accept-Encoding`，各框架都不压缩。单次压测受机器状态影响很大（同一应用前后两次可以差 30% 以上），所以 4 个应用轮流测 5 轮，每轮换一次顺序，取 req/s 的中位数。
 - **JS 体积**：统一用 gzip -6 计算，不依赖服务器的压缩设置。
 
@@ -117,6 +119,7 @@ Apple M2, 16 GB, Node v25.8.1, 2026-10-22, Lighthouse median of 5 runs
 - SSR 性能（CPU profiling 发现）：
   - `matchPath` 每次调用都新建 `URLPattern`，一次首页渲染要匹配约 40 次（每个 outlet 查找路由、每个路由的 `getContent` 检查是否匹配），占 CPU 时间 12% → 缓存编译后的 pattern；不含参数的 pattern 直接比较字符串（`URLPattern.exec` 每次约 2.5 µs，是正则的约 80 倍）
   - 响应流经过 `TextEncoderStream`，多一层 TransformStream，占 CPU 时间约 10% → 在 `ReadableStream` 的 `pull` 中直接用 `TextEncoder` 编码
+- `formActions` 不传回调时表单不会提交（例如 `<form ${logout()}>`）：`callback?.(await submitAction(...))` 在没有回调时整个短路，`submitAction` 不会执行 → 先提交再调用回调
 
 设计差异（不算问题，但会影响测试）：
 
