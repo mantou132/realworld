@@ -1,8 +1,11 @@
 import { type Article, avatar, type Comment, formatDate } from '../../lib/types';
 import { userStore } from '../../stores';
+import type { actions as layoutActions } from '../_layout.server';
 import type { ArticleData, actions } from './[slug].server';
 
-const { createComment, deleteComment, deleteArticle, toggleFavorite, toggleFollow } = formActions<typeof actions>();
+const { createComment, deleteComment, deleteArticle, toggleFavorite, toggleFollow } = formActions<
+  typeof actions & typeof layoutActions
+>();
 
 const style = css`
   .article-meta form {
@@ -56,6 +59,7 @@ export default class ArticlePage extends GemElement {
             </button>
           </form>
           <form ${toggleFavorite()}>
+            <input type="hidden" name="slug" value=${article.slug} />
             <input type="hidden" name="favorited" value=${article.favorited ? 'on' : ''} />
             <button class=${classMap({
               btn: true,

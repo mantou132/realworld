@@ -2,6 +2,7 @@ import { history } from '@mantou/gem';
 
 import { userStore } from '../stores';
 import { type Article, type ArticleListData, avatar, formatDate } from '../lib/types';
+import type { actions } from '../pages/_layout.server';
 
 const pageLink = (page: number) => {
   const { path, query } = history.getParams();
@@ -10,11 +11,8 @@ const pageLink = (page: number) => {
   return `${path}?${params}`;
 };
 
-// 提交到文章页面的 action，不属于当前页面，不能使用 `formActions`
-const submitFavorite = (evt: SubmitEvent) => {
-  evt.preventDefault();
-  submitAction(evt.target as HTMLFormElement, evt.submitter);
-};
+// 根 layout 的 action，文章列表所在的每个页面都可以提交
+const { toggleFavorite } = formActions<typeof actions>();
 
 const preview = (article: Article) => html`
   <div class="article-preview">
@@ -26,13 +24,8 @@ const preview = (article: Article) => html`
         <a class="author" href=${`/profile/${article.author.username}`}>${article.author.username}</a>
         <span class="date">${formatDate(article.createdAt)}</span>
       </div>
-      <form
-        v-if=${!!userStore.user}
-        class="pull-xs-right"
-        method="post"
-        action=${`/article/${article.slug}?/toggleFavorite`}
-        @submit=${submitFavorite}
-      >
+      <form v-if=${!!userStore.user} class="pull-xs-right" ${toggleFavorite()}>
+        <input type="hidden" name="slug" value=${article.slug} />
         <input type="hidden" name="favorited" value=${article.favorited ? 'on' : ''} />
         <button
           class=${classMap({

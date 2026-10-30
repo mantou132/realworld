@@ -34,10 +34,6 @@ export const actions = {
     await api(ctx, `articles/${ctx.params.slug}`, 'DELETE');
     redirect(303, '/');
   },
-  toggleFavorite: async (ctx: Context) => {
-    const form = await ctx.request.formData();
-    await api(ctx, `articles/${ctx.params.slug}/favorite`, form.get('favorited') ? 'DELETE' : 'POST');
-  },
   toggleFollow: async (ctx: Context) => {
     const form = await ctx.request.formData();
     await api(ctx, `profiles/${formString(form, 'username')}/follow`, form.get('following') ? 'DELETE' : 'POST');
