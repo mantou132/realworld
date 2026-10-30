@@ -1,7 +1,8 @@
-import { enhance } from '../../lib/form';
 import { type Article, avatar, type Comment, formatDate } from '../../lib/types';
 import { userStore } from '../../stores';
-import type { ArticleData } from './[slug].server';
+import type { ArticleData, actions } from './[slug].server';
+
+const { createComment, deleteComment, deleteArticle, toggleFavorite, toggleFollow } = formActions<typeof actions>();
 
 const style = css`
   .article-meta form {
@@ -37,12 +38,12 @@ export default class ArticlePage extends GemElement {
           <a href=${`/editor/${article.slug}`} class="btn btn-outline-secondary btn-sm">
             <i class="ion-edit"></i> Edit Article
           </a>
-          <form method="post" action="?/deleteArticle" @submit=${enhance()}>
+          <form ${deleteArticle()}>
             <button class="btn btn-outline-danger btn-sm"><i class="ion-trash-a"></i> Delete Article</button>
           </form>
         </span>
         <span v-else-if=${!!user}>
-          <form method="post" action="?/toggleFollow" @submit=${enhance()}>
+          <form ${toggleFollow()}>
             <input type="hidden" name="username" value=${author.username} />
             <input type="hidden" name="following" value=${author.following ? 'on' : ''} />
             <button class=${classMap({
@@ -54,7 +55,7 @@ export default class ArticlePage extends GemElement {
               <i class="ion-plus-round"></i> ${author.following ? 'Unfollow' : 'Follow'} ${author.username}
             </button>
           </form>
-          <form method="post" action="?/toggleFavorite" @submit=${enhance()}>
+          <form ${toggleFavorite()}>
             <input type="hidden" name="favorited" value=${article.favorited ? 'on' : ''} />
             <button class=${classMap({
               btn: true,
@@ -82,7 +83,7 @@ export default class ArticlePage extends GemElement {
         <a href=${`/profile/${comment.author.username}`} class="comment-author">${comment.author.username}</a>
         <span class="date-posted">${formatDate(comment.createdAt)}</span>
         <span v-if=${userStore.user?.username === comment.author.username} class="mod-options">
-          <form method="post" action="?/deleteComment" @submit=${enhance()}>
+          <form ${deleteComment()}>
             <input type="hidden" name="id" value=${comment.id} />
             <button aria-label="Delete comment"><i class="ion-trash-a"></i></button>
           </form>
@@ -90,11 +91,6 @@ export default class ArticlePage extends GemElement {
       </div>
     </div>
   `;
-
-  #resetComment = (evt: SubmitEvent) => {
-    const form = evt.target as HTMLFormElement;
-    return enhance(() => form.reset())(evt);
-  };
 
   @template()
   #content = () => {
@@ -121,7 +117,7 @@ export default class ArticlePage extends GemElement {
           <div class="article-actions">${this.#meta(article)}</div>
           <div class="row">
             <div class="col-xs-12 col-md-8 offset-md-2">
-              <form v-if=${!!user} class="card comment-form" method="post" action="?/createComment" @submit=${this.#resetComment}>
+              <form v-if=${!!user} class="card comment-form" ${createComment((_, form) => form.reset())}>
                 <div class="card-block">
                   <textarea class="form-control" name="comment" placeholder="Write a comment..." rows="3"></textarea>
                 </div>

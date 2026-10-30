@@ -1,5 +1,8 @@
-import { enhance } from '../lib/form';
 import type { Article, Errors } from '../lib/types';
+import type { actions } from '../pages/editor/index.server';
+
+// 新建和编辑文章的页面都有 `save`
+const { save } = formActions<typeof actions>();
 
 const style = css`
   .tag-pill {
@@ -28,7 +31,7 @@ export class AppEditorElement extends GemElement {
     input.value = '';
   };
 
-  #submit = enhance<{ errors?: Errors }>((result) => this.#state({ errors: result?.errors }));
+  #onSave = (result?: { errors?: Errors }) => this.#state({ errors: result?.errors });
 
   @template()
   #content = () => html`
@@ -37,7 +40,7 @@ export class AppEditorElement extends GemElement {
         <div class="row">
           <div class="col-md-10 offset-md-1 col-xs-12">
             <app-list-errors .errors=${this.#state.errors}></app-list-errors>
-            <form method="post" action="?/save" @submit=${this.#submit}>
+            <form ${save(this.#onSave)}>
               <fieldset>
                 <fieldset class="form-group">
                   <input name="title" class="form-control form-control-lg" placeholder="Article Title" value=${this.article?.title ?? ''} />

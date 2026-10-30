@@ -1,13 +1,15 @@
-import { enhance } from '../lib/form';
 import type { Errors } from '../lib/types';
 import { userStore } from '../stores';
+import type { actions } from './settings.server';
+
+const { save, logout } = formActions<typeof actions>();
 
 @page('Settings')
 @connectStore(userStore)
 export default class SettingsPage extends GemElement {
   #state = createState({ errors: undefined as Errors | undefined });
 
-  #save = enhance<{ errors?: Errors }>((result) => this.#state({ errors: result?.errors }));
+  #onSave = (result?: { errors?: Errors }) => this.#state({ errors: result?.errors });
 
   @template()
   #content = () => {
@@ -19,7 +21,7 @@ export default class SettingsPage extends GemElement {
             <div class="col-md-6 offset-md-3 col-xs-12">
               <h1 class="text-xs-center">Your Settings</h1>
               <app-list-errors .errors=${this.#state.errors}></app-list-errors>
-              <form method="post" action="?/save" @submit=${this.#save}>
+              <form ${save(this.#onSave)}>
                 <fieldset>
                   <fieldset class="form-group">
                     <input class="form-control" name="image" type="text" placeholder="URL of profile picture" value=${user?.image ?? ''} />
@@ -46,7 +48,7 @@ export default class SettingsPage extends GemElement {
                 </fieldset>
               </form>
               <hr />
-              <form method="post" action="?/logout" @submit=${enhance()}>
+              <form ${logout()}>
                 <button class="btn btn-outline-danger" type="submit">Or click here to logout.</button>
               </form>
             </div>

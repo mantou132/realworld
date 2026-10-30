@@ -1,4 +1,4 @@
-import type { RequestEvent } from '@mantou/gemkit';
+import type { Handle } from '@mantou/gemkit';
 
 import type { User } from './lib/types';
 
@@ -18,7 +18,7 @@ const isGuestPath = (path: string) => path === '/login' || path === '/register';
  * 和 SvelteKit 版一样，登录用户（包含 token）以 base64 JSON 保存在 httpOnly cookie 中，
  * 每个请求解析一次放到 `locals`，并统一检查页面和 action 的权限
  */
-export function handle({ path, url, request, cookies, locals }: RequestEvent) {
+export const handle: Handle = ({ path, url, request, cookies, locals }, resolve) => {
   const jwt = cookies.get('jwt');
   if (jwt) {
     try {
@@ -30,10 +30,11 @@ export function handle({ path, url, request, cookies, locals }: RequestEvent) {
   }
   if (locals.user) {
     if (isGuestPath(path)) redirect(302, '/');
-    return;
+  } else {
+    const feed = path === '/' && url.searchParams.get('feed') === 'following';
+    // 除了登录和注册，所有 action（收藏、关注、评论等）都需要登录
+    const action = request.method === 'POST' && !isGuestPath(path);
+    if (feed || action || isPrivatePath(path)) redirect(302, '/login');
   }
-  const feed = path === '/' && url.searchParams.get('feed') === 'following';
-  // 除了登录和注册，所有 action（收藏、关注、评论等）都需要登录
-  const action = request.method === 'POST' && !isGuestPath(path);
-  if (feed || action || isPrivatePath(path)) redirect(302, '/login');
-}
+  return resolve();
+};

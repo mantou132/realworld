@@ -1,8 +1,10 @@
 import { history } from '@mantou/gem';
 
-import { enhance } from '../../../lib/form';
 import { avatar, type Profile } from '../../../lib/types';
 import { userStore } from '../../../stores';
+import type { actions } from './_layout.server';
+
+const { toggleFollow } = formActions<typeof actions>();
 
 @layout()
 @connectStore(history.store)
@@ -18,7 +20,7 @@ export default class ProfileLayout extends GemElement {
       </a>`;
     }
     if (!user) return html`<a href="/login">Sign in to follow</a>`;
-    return html`<form method="post" action="?/toggleFollow" @submit=${enhance()}>
+    return html`<form ${toggleFollow()}>
       <input type="hidden" name="following" value=${profile.following ? 'on' : ''} />
       <button class=${classMap({
         btn: true,

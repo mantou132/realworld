@@ -1,7 +1,6 @@
 import { history } from '@mantou/gem';
 
 import { userStore } from '../stores';
-import { enhance } from '../lib/form';
 import { type Article, type ArticleListData, avatar, formatDate } from '../lib/types';
 
 const pageLink = (page: number) => {
@@ -9,6 +8,12 @@ const pageLink = (page: number) => {
   const params = new URLSearchParams(String(query));
   params.set('page', `${page}`);
   return `${path}?${params}`;
+};
+
+// 提交到文章页面的 action，不属于当前页面，不能使用 `formActions`
+const submitFavorite = (evt: SubmitEvent) => {
+  evt.preventDefault();
+  submitAction(evt.target as HTMLFormElement, evt.submitter);
 };
 
 const preview = (article: Article) => html`
@@ -26,7 +31,7 @@ const preview = (article: Article) => html`
         class="pull-xs-right"
         method="post"
         action=${`/article/${article.slug}?/toggleFavorite`}
-        @submit=${enhance()}
+        @submit=${submitFavorite}
       >
         <input type="hidden" name="favorited" value=${article.favorited ? 'on' : ''} />
         <button
