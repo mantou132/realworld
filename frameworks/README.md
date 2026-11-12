@@ -4,7 +4,7 @@
 
 | 应用 | 来源 | 版本 | 架构 |
 | --- | --- | --- | --- |
-| [gemkit](apps/gemkit) | 本仓库新写 | gemkit（[gem](https://github.com/mantou132/gem) `main` @ `70c5aa3`，本地链接） | httpOnly cookie 登录，`*.server.ts` 中 `load` 和 form `actions`，`formActions` 不刷新提交（action 名称和结果有类型检查） |
+| [gemkit](apps/gemkit) | 本仓库新写 | gemkit（[gem](https://github.com/mantou132/gem) `main` @ `8c7a68c1`，本地链接） | httpOnly cookie 登录，`*.server.ts` 中 `load` 和 form `actions`，`formActions` 不刷新提交（action 名称和结果有类型检查） |
 | [sveltekit](apps/sveltekit) | [sveltejs/realworld](https://github.com/sveltejs/realworld) @ `df79670` | SvelteKit 2.52、Svelte 5 | httpOnly cookie 登录，`+page.server.js` 的 `load` 和 form actions |
 | [nuxt](apps/nuxt) | 本仓库新写（社区没有完整的 Nuxt 3/4 版本），结构参照 SvelteKit 版 | Nuxt 4.6 | `useCookie` 保存 token，页面直接请求 API，文章 markdown 走 Nitro server route |
 | [next](apps/next) | [yukicountry/realworld-nextjs-rsc](https://github.com/yukicountry/realworld-nextjs-rsc) @ `f455599` | Next.js 15.4、React 18 | App Router、React Server Components、Server Actions |
@@ -15,7 +15,7 @@
 
 Apple M2, 16 GB, Node v25.8.1, 2026-10-22, Lighthouse median of 5 runs
 
-> 以下数据是在 gem `38c0320e` 上测量的。之后 gemkit 修改了 `handle`（改为 `handle(event, resolve)`）、Node.js 服务器（静态文件索引、预压缩和实时压缩）和重新部署时的版本检查，gemkit 版也改用了 `formActions`，需要在 `70c5aa3` 上重新测量。
+> 以下数据是在 gem `38c0320e` 上测量的。之后 gemkit 修改了 `handle`（改为 `handle(event, resolve)`）、Node.js 服务器（静态文件索引、预压缩和实时压缩）和重新部署时的版本检查，gemkit 版也改用了 `formActions`，需要在 `8c7a68c1` 上重新测量。
 
 ### Client JS (gzip, KB)
 
