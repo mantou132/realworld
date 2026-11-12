@@ -1,5 +1,3 @@
-import { history } from '@mantou/gem';
-
 import { avatar, type Profile } from '../../../lib/types';
 import { userStore } from '../../../stores';
 import type { actions } from './_layout.server';
@@ -7,7 +5,7 @@ import type { actions } from './_layout.server';
 const { toggleFollow } = formActions<typeof actions>();
 
 @layout()
-@connectStore(history.store)
+@connectStore(routeStore)
 @connectStore(userStore)
 export default class ProfileLayout extends GemElement {
   @property data: Profile;
@@ -37,7 +35,7 @@ export default class ProfileLayout extends GemElement {
   @template()
   #content = () => {
     const profile = this.data;
-    const favorites = history.getParams().path.endsWith('/favorites');
+    const favorites = routeStore.path.endsWith('/favorites');
     return html`
       <div class="profile-page">
         <div class="user-info">

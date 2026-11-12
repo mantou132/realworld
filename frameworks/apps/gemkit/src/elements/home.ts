@@ -1,11 +1,9 @@
-import { history } from '@mantou/gem';
-
 import { userStore } from '../stores';
 import type { HomeData } from '../lib/home.server';
 
 /** 首页和标签页共用 */
 @customElement('app-home')
-@connectStore(history.store)
+@connectStore(routeStore)
 @connectStore(userStore)
 export class AppHomeElement extends GemElement {
   @property data: HomeData;
@@ -15,7 +13,7 @@ export class AppHomeElement extends GemElement {
   #content = () => {
     const { data, tag } = this;
     const { user } = userStore;
-    const feed = !tag && !!user && new URLSearchParams(String(history.getParams().query)).get('feed') === 'following';
+    const feed = !tag && !!user && routeStore.query.get('feed') === 'following';
     const empty = feed
       ? html`Your feed is empty. Follow some authors or browse the <a href="/">Global Feed</a>.`
       : undefined;

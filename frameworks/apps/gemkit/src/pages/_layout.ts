@@ -1,16 +1,14 @@
-import { history } from '@mantou/gem';
-
 import { avatar, type User } from '../lib/types';
 import { userStore } from '../stores';
 
 // 服务端数据中的当前用户写入 store，导航栏和页面从 store 读取
 @layout({ load: ({ data }: { data: { user: User | null } }) => userStore({ user: data.user }) })
-@connectStore(history.store)
+@connectStore(routeStore)
 @connectStore(userStore)
 export default class RootLayout extends GemElement {
   #link = (path: string, content: unknown) =>
     html`<li class="nav-item">
-      <a class=${classMap({ 'nav-link': true, active: history.getParams().path === path })} href=${path}>${content}</a>
+      <a class=${classMap({ 'nav-link': true, active: routeStore.path === path })} href=${path}>${content}</a>
     </li>`;
 
   @template()

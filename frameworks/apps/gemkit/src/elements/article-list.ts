@@ -1,14 +1,11 @@
-import { history } from '@mantou/gem';
-
 import { userStore } from '../stores';
 import { type Article, type ArticleListData, avatar, formatDate } from '../lib/types';
 import type { actions } from '../pages/_layout.server';
 
 const pageLink = (page: number) => {
-  const { path, query } = history.getParams();
-  const params = new URLSearchParams(String(query));
+  const params = new URLSearchParams(String(routeStore.query));
   params.set('page', `${page}`);
-  return `${path}?${params}`;
+  return `${routeStore.path}?${params}`;
 };
 
 // 根 layout 的 action，文章列表所在的每个页面都可以提交
@@ -51,7 +48,7 @@ const preview = (article: Article) => html`
 `;
 
 @customElement('app-article-list')
-@connectStore(history.store)
+@connectStore(routeStore)
 @connectStore(userStore)
 export class AppArticleListElement extends GemElement {
   @property data: ArticleListData;
@@ -61,7 +58,7 @@ export class AppArticleListElement extends GemElement {
   #content = () => {
     const { articles, pages } = this.data;
     const empty = this.empty ?? 'No articles are here... yet.';
-    const current = Number(new URLSearchParams(String(history.getParams().query)).get('page')) || 1;
+    const current = Number(routeStore.query.get('page')) || 1;
     return html`
       ${articles.map(preview)}
       <div v-if=${!articles.length} class="article-preview empty-feed-message">${empty}</div>
